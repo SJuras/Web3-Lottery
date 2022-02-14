@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 import 'bulma/css/bulma.css';
@@ -18,7 +19,7 @@ export default function Home() {
         <nav className="navbar mt-4 mb-4">
           <div className="container">
             <div className="navbar-brand">
-                <h1>Ether Lotter</h1>
+                <h1 className="underline">Ether Lotter</h1>
             </div>
             <div className="navbar-end">
               <button className="button is-link">
@@ -30,63 +31,10 @@ export default function Home() {
 
         {/* main content */}
         <div className="container">
-          <section className="mt-5">
-            <div className="columns">
-              <div className="column is-two-thirds">
-                <section className="mt-5">
-                  <p>Enter Lottery by sending 0.01 Ether</p>
-                  <button className="button is-link is-large is-light mt-3">
-                    Play Now!
-                  </button>
-                </section>
-                <section className="mt-6">
-                  <p>Admin Only - Pick Winnder</p>
-                  <button className="button is-primary is-large is-light mt-3">
-                    Pick Winner
-                  </button>
-                </section>
-              </div>
-              <div className="column is-one-third">
-                <p>Lottery Info</p>
-                <section className="mt-5">
-                  <div className="card">
-                    <div className="card-content">
-                      <div className="content">
-                        <h2>Lottery History</h2>
-                        <div className="history-entry">
-                          <div>Lottery #1 Winner: </div>
-                          <div>
-                            <a href="" target="_blank">7585869695947373636346586896769</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section className="mt-5">
-                  <div className="card">
-                    <div className="card-content">
-                      <div className="content">
-                        <h2>Players (1)</h2>
-                        <div>
-                          <a href="" target="_blank">7585869695947373636346586896769</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section className="mt-5">
-                  <div className="card">
-                    <div className="card-content">
-                      <div className="content">
-                        <h2>Pot</h2>
-                        <p>10 Ether</p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
+          <section>
+            <Link href="/lotterypage">
+              To Lottery
+            </Link>
           </section>
         </div>
         {/* timestamp: 20:00 */}
