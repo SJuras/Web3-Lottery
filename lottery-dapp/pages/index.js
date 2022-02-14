@@ -51,6 +51,49 @@ export default function Home() {
 
       </main>
 
+      {/* about */}
+      <div className="">
+        <h3>Important!</h3>
+        <p className="">
+          Dapp Lottery uses testnet Ether only and is deployed to the Rinkeby testnet.
+        </p>
+        <p>
+          No real value is to be gained or distributed as the prize for winning and/or participating in this lottery.
+        </p>
+        <p>
+          This project exists only for demonstration purposes.
+        </p>
+      </div>
+
+      {/* instructions */}
+      <div className="">
+        <h3>How to Use</h3>
+        <p>
+          You are going to need a MetaMask wallet, if you don't have one installed yet you can download it here:
+        </p>
+        <a href="https://metamask.io/" className="">metamask.io</a>
+        <p>
+          Dapp Lottery is connected to the Rinkeby ether testnet, so you should connect your MetaMask wallet to
+          Rinkeby testnet.
+        </p>
+        <p>
+          Dapp Lottery uses testnet Ether which you can get in one of the Rinkeby testnet faucets:
+        </p>
+        <ul className="mb-4">
+          <li><a href="https://faucet.rinkeby.io/" className="font-Ubuntu text-brendanPink font-bold">faucet.rinkeby.io</a></li>
+          <li><a href="https://rinkeby.faucet.epirus.io/" className="font-Ubuntu text-brendanPink font-bold">rinkeby.faucet.epirus.io</a></li>
+          <li><a href="https://faucets.chain.link/rinkeby" className="font-Ubuntu text-brendanPink font-bold">faucets.chain.link/rinkeby</a></li>
+        </ul>
+      </div>
+
+      {/* description */}
+      <div className="">
+        <h3>Description</h3>
+        <p>
+          This project is made using smart contract written in Solidity and Truffle. Fontend is made with Next.Js and Tailwing css
+        </p>
+      </div>
+
       <footer className={styles.footer}>
         <p>&copy; 2022 Lottery Dapp</p>
       </footer>
