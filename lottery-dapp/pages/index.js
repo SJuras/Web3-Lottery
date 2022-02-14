@@ -20,13 +20,13 @@ export default function Home() {
 
       <main className={styles.main}>
       {/* navbar */}
-        <nav className="navbar mt-4 mb-4">
-          <div className="container">
-            <div className="navbar-brand">
+        <nav className="w-full max-w-7xl mx-auto p-3 mt-4 mb-4">
+          <div className="flex justify-between items-center">
+            <div className="">
                 <h1 className="underline">Ether Lotter</h1>
             </div>
-            <div className="navbar-end">
-              <button className="button is-link">
+            <div className="">
+              <button className="">
                 Connect Wallet
               </button>
             </div>
@@ -34,83 +34,106 @@ export default function Home() {
         </nav>
 
         {/* main content */}
-        <div className="container">
-          <section>
-            <h4>Lottery</h4>
-            <h4>宝くじ</h4>
-            <h4>лотерея</h4>
-            <h4>लॉटरी</h4>
-            <h4>վիճակախաղ</h4>
-          </section>
-          <section>
-            <Link href="/lotterypage">
-              To Lottery
-            </Link>
-            <button className="button">
-              Learn More
-            </button>
-          </section>
+        <div className="w-full min-h-full">
+          <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row">
+            <div className="w-full md:w-1/2">
+              <section>
+                <h4>Lottery</h4>
+                <h4>宝くじ</h4>
+                <h4>лотерея</h4>
+                <h4>लॉटरी</h4>
+                <h4>վիճակախաղ</h4>
+              </section>
+              <section>
+                <Link href="/lotterypage">
+                  To Lottery
+                </Link>
+                <button className="button">
+                  Learn More
+                </button>
+              </section>
+            </div>
+            <div className="w-full md:w-1/2">
+              <h4>Right</h4>
+            </div>
+          </div>
         </div>
         {/* timestamp: 20:00 */}
 
       </main>
 
       {/* about */}
-      <div className="">
-        <h3>Important!</h3>
-        <p className="">
-          Dapp Lottery uses testnet Ether only and is deployed to the Rinkeby testnet.
-        </p>
-        <p>
-          No real value is to be gained or distributed as the prize for winning and/or participating in this lottery.
-        </p>
-        <p>
-          This project exists for demonstration purposes only.
-        </p>
+      <div className="w-full">
+        <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
+          <div className="w-full md:w-1/2">
+            <h3>Important!</h3>
+            <p className="">
+              Dapp Lottery uses testnet Ether only and is deployed to the Rinkeby testnet.
+            </p>
+            <p>
+              No real value is to be gained or distributed as the prize for winning and/or participating in this lottery.
+            </p>
+            <p>
+              This project exists for demonstration purposes only.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2">
+
+          </div>
+        </div>
       </div>
 
       {/* instructions */}
-      <div className="">
-        <h3>How to Use</h3>
-        <p>
-          You are going to need a MetaMask wallet, if you don't have one installed yet you can download it here:
-        </p>
-        <a href="https://metamask.io/" className="">metamask.io</a>
-        <p>
-          Dapp Lottery is connected to the Rinkeby ether testnet, so you should connect your MetaMask wallet to
-          Rinkeby testnet.
-        </p>
-        <p>
-          Dapp Lottery uses testnet Ether which you can get in one of the Rinkeby testnet faucets:
-        </p>
-        <ul className="mb-4">
-          <li><a href="https://faucet.rinkeby.io/" className="font-Ubuntu text-brendanPink font-bold">faucet.rinkeby.io</a></li>
-          <li><a href="https://rinkeby.faucet.epirus.io/" className="font-Ubuntu text-brendanPink font-bold">rinkeby.faucet.epirus.io</a></li>
-          <li><a href="https://faucets.chain.link/rinkeby" className="font-Ubuntu text-brendanPink font-bold">faucets.chain.link/rinkeby</a></li>
-        </ul>
+      <div className="w-full">
+        <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
+          <div className="w-full md:w-1/2">
+            <h3>How to Use</h3>
+            <p>
+              You are going to need a MetaMask wallet, if you don't have one installed yet you can download it here:
+            </p>
+            <a href="https://metamask.io/" className="">metamask.io</a>
+            <p>
+              Dapp Lottery is connected to the Rinkeby ether testnet, so you should connect your MetaMask wallet to
+              Rinkeby testnet.
+            </p>
+            <p>
+              Dapp Lottery uses testnet Ether which you can get in one of the Rinkeby testnet faucets:
+            </p>
+            <ul className="mb-4">
+              <li><a href="https://faucet.rinkeby.io/" className="font-Ubuntu text-brendanPink font-bold">faucet.rinkeby.io</a></li>
+              <li><a href="https://rinkeby.faucet.epirus.io/" className="font-Ubuntu text-brendanPink font-bold">rinkeby.faucet.epirus.io</a></li>
+              <li><a href="https://faucets.chain.link/rinkeby" className="font-Ubuntu text-brendanPink font-bold">faucets.chain.link/rinkeby</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       {/* description */}
-      <div className="">
-        <h3>Description</h3>
-        <p>
-          This project is made using smart contract written in Solidity and Truffle. Frontend is made with Next.Js and Tailwing css
-        </p>
+      <div className="w-full">
+        <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
+          <div className="w-full md:w-1/2">
+            <h3>Description</h3>
+            <p>
+              This project is made using smart contract written in Solidity and Truffle. Frontend is made with Next.Js and Tailwing css
+            </p>
+          </div>
+        </div>
       </div>
 
-      <footer className="">
-        <div className="w-full flex flex-col md:flex-row">
-          <div className="w-full md:w-1/3">
+      <footer className="w-full">
+        <div className="w-full max-w-7xl mx-auto p-3 flex flex-col md:flex-row">
+          <div className="w-full md:w-1/3 mb-4">
             <h4>Lottery Dapp</h4>
+            <p>Ethereum Lottery Dapp</p>
           </div>
-          <div className="w-full md:w-1/3">
+          <div className="w-full md:w-1/3 mb-4 flex flex-col md:justify-center md:items-center">
             <h4>Follow Us:</h4>
             <ul className="">
               <li className="group"><a href="https://github.com/SJuras" className="flex group"><span><FaGithub className="inline transition duration-300 mr-1 group-hover:text-brendanPink -mt-1" /></span> <p className="transition duration-300 group-hover:text-brendanPink">GitHub</p></a></li>
               <li className="group"><a href="https://www.facebook.com/stjepko.juras" className="flex group"><span><FaFacebook className="inline transition duration-300 mr-1 group-hover:text-brendanPink -mt-1" /></span><p className="transition duration-300 group-hover:text-brendanPink">Facebook</p></a></li>
             </ul>
           </div>
-          <div className="w-full md:w-1/3">
+          <div className="w-full md:w-1/3 text-left md:text-right mb-4">
             <h4>Useful Links:</h4>
             <ul>
               <li className="transition duration-300 "><a href="https://ethereum.org/en/">Ethereum</a></li>
@@ -121,9 +144,9 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full max-w-7xl mx-auto p-4 rounded-lg flex flex-col md:flex-row justify-between items-center">
           <p>&copy; 2022 Lottery Dapp</p>
-          <p>Created with by: Sarif-Design</p>
+          <p>Created with <span><FaHeart className="inline" /></span> by: Sarif-Design</p>
         </div>
       </footer>
     </div>
