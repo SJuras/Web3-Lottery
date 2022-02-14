@@ -32,9 +32,19 @@ export default function Home() {
         {/* main content */}
         <div className="container">
           <section>
+            <h4>Lottery</h4>
+            <h4>宝くじ</h4>
+            <h4>лотерея</h4>
+            <h4>लॉटरी</h4>
+            <h4>վիճակախաղ</h4>
+          </section>
+          <section>
             <Link href="/lotterypage">
               To Lottery
             </Link>
+            <button className="button">
+              Learn More
+            </button>
           </section>
         </div>
         {/* timestamp: 20:00 */}
