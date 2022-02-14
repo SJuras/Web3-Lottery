@@ -3,6 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
+import { FaGithub } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
+
 import 'bulma/css/bulma.css';
 
 export default function Home() {
@@ -61,7 +65,7 @@ export default function Home() {
           No real value is to be gained or distributed as the prize for winning and/or participating in this lottery.
         </p>
         <p>
-          This project exists only for demonstration purposes.
+          This project exists for demonstration purposes only.
         </p>
       </div>
 
@@ -90,12 +94,37 @@ export default function Home() {
       <div className="">
         <h3>Description</h3>
         <p>
-          This project is made using smart contract written in Solidity and Truffle. Fontend is made with Next.Js and Tailwing css
+          This project is made using smart contract written in Solidity and Truffle. Frontend is made with Next.Js and Tailwing css
         </p>
       </div>
 
-      <footer className={styles.footer}>
-        <p>&copy; 2022 Lottery Dapp</p>
+      <footer className="">
+        <div className="w-full flex flex-col md:flex-row">
+          <div className="w-full md:w-1/3">
+            <h4>Lottery Dapp</h4>
+          </div>
+          <div className="w-full md:w-1/3">
+            <h4>Follow Us:</h4>
+            <ul className="">
+              <li className="group"><a href="https://github.com/SJuras" className="flex group"><span><FaGithub className="inline transition duration-300 mr-1 group-hover:text-brendanPink -mt-1" /></span> <p className="transition duration-300 group-hover:text-brendanPink">GitHub</p></a></li>
+              <li className="group"><a href="https://www.facebook.com/stjepko.juras" className="flex group"><span><FaFacebook className="inline transition duration-300 mr-1 group-hover:text-brendanPink -mt-1" /></span><p className="transition duration-300 group-hover:text-brendanPink">Facebook</p></a></li>
+            </ul>
+          </div>
+          <div className="w-full md:w-1/3">
+            <h4>Useful Links:</h4>
+            <ul>
+              <li className="transition duration-300 "><a href="https://ethereum.org/en/">Ethereum</a></li>
+              <li className="transition duration-300 "><a href="https://metamask.io/">MetaMask</a></li>
+              <li className="transition duration-300 "><a href="https://chain.link/">ChainLink</a></li>
+              <li className="transition duration-300 "><a href="https://en.wikipedia.org/wiki/Web3">What is Web3.0</a></li>
+              <li className="transition duration-300 "><a href="https://docs.soliditylang.org/en/v0.8.11/introduction-to-smart-contracts.html">What is a Smart Contract</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="w-full">
+          <p>&copy; 2022 Lottery Dapp</p>
+          <p>Created with by: Sarif-Design</p>
+        </div>
       </footer>
     </div>
   )
