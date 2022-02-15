@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Starduster";
+    src: url("/fonts/Starduster2.ttf");
+  }
+}

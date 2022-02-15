@@ -3,6 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
+import { FaFacebook } from "react-icons/fa";
+
+import Footer from '../components/Footer.js';
+
 import 'bulma/css/bulma.css';
 
 export default function Home() {
@@ -14,15 +18,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className="">
       {/* navbar */}
-        <nav className="navbar mt-4 mb-4">
-          <div className="container">
-            <div className="navbar-brand">
-                <h1 className="underline">Ether Lotter</h1>
+        <nav className="w-full max-w-7xl mx-auto mt-4 mb-4">
+          <div className="flex justify-between items-center">
+            <div className="cursor-pointer">
+                <Link href="/">
+                  <h1 className="font-[Starduster] text-4xl text-yellow-300 drop-shadow-lg drop-shadow-lg">SOKUDO</h1>
+                </Link>
             </div>
-            <div className="navbar-end">
-              <button className="button is-link">
+            <div className="p-2 bg-purple-500 font-[Starduster] text-xl text-yellow-300 cursor-pointer drop-shadow-lg">
+              <button className="font-[Starduster] cursor-pointer">
                 Connect Wallet
               </button>
             </div>
@@ -30,7 +36,7 @@ export default function Home() {
         </nav>
 
         {/* main content */}
-        <div className="container">
+        <div className="w-full max-w-7xl mx-auto mt-4 mb-4">
           <section className="mt-5">
             <div className="columns">
               <div className="column is-two-thirds">
@@ -45,9 +51,59 @@ export default function Home() {
                 <section className="mt-6">
                   <p>Admin Only - Pick Winnder</p>
                   <button className="button is-primary is-large is-light mt-3">
-                    Pick Winner
+                    Start Lottery
                   </button>
                 </section>
+                <div className="flex flex-col md:flex-row">
+                  <div className="w-full md:w-1/2">
+                    <section>
+                      <h2 className="text-xl font-bold mb-2">How to Play</h2>
+                      <p>
+                        Rules are simple,
+                      </p>
+                      <p>
+                        Click the "Connect Wallet" button to connect your MetaMask
+                      </p>
+                      <p>
+                        To participate in lottery, send 0.01 test Ether by clicking "Play Now" button.
+                      </p>
+                      <p>
+                        The admin will start the lottery. To contact the admin please use this link:
+                      </p>
+                      <a href="https://www.facebook.com/stjepko.juras" className="flex group"><span><FaFacebook className="inline transition duration-300 mr-1 group-hover:text-brendanPink -mt-1" /></span><p className="transition duration-300 group-hover:text-brendanPink">Facebook</p></a>
+                      <p>
+                        A random number will be picked using Chainlink protocol.
+                      </p>
+                      <p>
+                        Picked random number will determine the winner of the round.
+                      </p>
+                    </section>
+                  </div>
+                  <div className="w-full md:w-1/2">
+                    <section>
+                      <h2 className="text-xl font-bold mb-2">このゲームの遊び方</h2>
+                      <p>
+                        ルールはシンプルです,
+                      </p>
+                      <p>
+                        右上のボタンをクリックします, ウォレットに接続する
+                      </p>
+                      <p>
+                        ボタンをクリックします, 出す 0.01 test Ether
+                      </p>
+                      <p>
+                        管理者に連絡する
+                      </p>
+                      <a href="https://www.facebook.com/stjepko.juras" className="flex group"><span><FaFacebook className="inline transition duration-300 mr-1 group-hover:text-brendanPink -mt-1" /></span><p className="transition duration-300 group-hover:text-brendanPink">Facebook</p></a>
+                      <p>
+                        乱数はを使用して選択されます Chainlink.
+                      </p>
+                      <p>
+                        勝者が決まります
+                      </p>
+                    </section>
+                  </div>
+                </div>
               </div>
               <div className="column is-one-third">
                 <p>Lottery Info</p>
@@ -100,9 +156,7 @@ export default function Home() {
 
       </main>
 
-      <footer className={styles.footer}>
-        <p>&copy; 2022 Lottery Dapp</p>
-      </footer>
+      <Footer />
     </div>
   )
 }
