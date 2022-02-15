@@ -55,6 +55,8 @@ export default function Home() {
             </div>
             <div className="w-full md:w-1/2">
               <h4>Right</h4>
+              <h4>Good Luck!</h4>
+              <h4>幸運を祈る</h4>
             </div>
           </div>
         </div>

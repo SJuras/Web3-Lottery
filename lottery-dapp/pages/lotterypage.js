@@ -39,6 +39,8 @@ export default function Home() {
                   <button className="button is-link is-large is-light mt-3">
                     Play Now!
                   </button>
+                  <h4>Give it a try!</h4>
+                  <h4>頑張って</h4>
                 </section>
                 <section className="mt-6">
                   <p>Admin Only - Pick Winnder</p>
@@ -54,8 +56,10 @@ export default function Home() {
                     <div className="card-content">
                       <div className="content">
                         <h2>Lottery History</h2>
+                        <h2>沿革</h2>
                         <div className="history-entry">
                           <div>Lottery #1 Winner: </div>
+                          <div>勝者</div>
                           <div>
                             <a href="" target="_blank">7585869695947373636346586896769</a>
                           </div>
@@ -69,6 +73,7 @@ export default function Home() {
                     <div className="card-content">
                       <div className="content">
                         <h2>Players (1)</h2>
+                        <h2>プレイヤー</h2>
                         <div>
                           <a href="" target="_blank">7585869695947373636346586896769</a>
                         </div>
@@ -81,6 +86,7 @@ export default function Home() {
                     <div className="card-content">
                       <div className="content">
                         <h2>Pot</h2>
+                        <h2>総計</h2>
                         <p>10 Ether</p>
                       </div>
                     </div>
