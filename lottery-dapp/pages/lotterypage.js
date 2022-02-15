@@ -27,9 +27,9 @@ export default function Home() {
                   <h1 className="font-[Starduster] text-4xl text-customYellow drop-shadow-lg drop-shadow-lg">SOKUDO</h1>
                 </Link>
             </div>
-            <div className="p-2 bg-customPurple font-[Starduster] text-xl text-customYellow cursor-pointer drop-shadow-lg">
+            <div className="p-2 bg-customPurple font-[Starduster] text-xl text-customYellow cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
               <button className="font-[Starduster] cursor-pointer">
-                Connect Wallet
+                Connect WAllet
               </button>
             </div>
           </div>
@@ -156,7 +156,9 @@ export default function Home() {
 
       </main>
 
-      <Footer />
+      <div className="w-full bg-customPurple">
+        <Footer />
+      </div>
     </div>
   )
 }

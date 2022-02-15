@@ -4,7 +4,7 @@ import { FaHeart } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <footer className="w-full">
+    <footer className="w-full pt-2">
       <div className="w-full max-w-7xl mx-auto p-3 flex flex-col items-start md:flex-row">
         <div className="w-full md:w-1/3 mb-4">
           <h4 className="text-2xl text-customYellow font-[Starduster]">Sokudo Lottery</h4>
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full max-w-7xl mx-auto p-4 rounded-lg flex flex-col md:flex-row justify-between items-center">
-        <p className="text-white">&copy; 2022 Lottery Dapp</p>
+        <p className="text-white">&copy; 2022 Sokudo Lottery</p>
         <p className="text-white">Created with <span><FaHeart className="inline text-customYellow" /></span> by: Sarif-Design</p>
       </div>
     </footer>

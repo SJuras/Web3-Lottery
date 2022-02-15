@@ -44,22 +44,23 @@ export default function Home() {
                 <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">վիճակախաղ</h4>
               </section>
               <section>
-                <div className="p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg">
+                <div className="p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
                   <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
                     <p className="text-customYellow text-2xl">To Lottery</p>
                   </Link>
                 </div>
-                <div className="p-2 bg-customBlue font-[Starduster] text-2xl cursor-pointer drop-shadow-lg">
+                <div className="p-2 bg-customBlue font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightBlue">
                   <button href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
-                    Learn More
+                    LeArn More
                   </button>
                 </div>
               </section>
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center">
-              <h4>Right</h4>
-              <h4>Good Luck!</h4>
-              <h4>幸運を祈る</h4>
+              <div className="flex flex-col">
+                <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg">Good Luck!</h4>
+                <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg">幸運を祈る</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -75,13 +76,16 @@ export default function Home() {
       </main>
 
       {/* about */}
-      <div className="w-full bg-customBlue">
+      <div className="w-full bg-customBlue py-8">
         <div className="w-full">
           <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
             <div className="w-full md:w-1/2">
-              <h3>Important!</h3>
+              <h3 className="text-2xl text-customYellow font-[Starduster]">Important!</h3>
               <p className="">
-                Dapp Lottery uses testnet Ether only and is deployed to the Rinkeby testnet.
+                Sokudo Lottery uses testnet Ether only and is deployed to the Rinkeby testnet.
+              </p>
+              <p>
+                No real value is required to participate in the lottery.
               </p>
               <p>
                 No real value is to be gained or distributed as the prize for winning and/or participating in this lottery.
@@ -100,17 +104,17 @@ export default function Home() {
         <div className="w-full">
           <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
             <div className="w-full md:w-1/2">
-              <h3>How to Use</h3>
+              <h3 className="text-2xl text-customYellow font-[Starduster]">How to Use</h3>
               <p>
                 You are going to need a MetaMask wallet, if you don't have one installed yet you can download it here:
               </p>
               <a href="https://metamask.io/" className="">metamask.io</a>
               <p>
-                Dapp Lottery is connected to the Rinkeby ether testnet, so you should connect your MetaMask wallet to
+                Sokudo Lottery is connected to the Rinkeby ether testnet, so you should connect your MetaMask wallet to
                 Rinkeby testnet.
               </p>
               <p>
-                Dapp Lottery uses testnet Ether which you can get in one of the Rinkeby testnet faucets:
+                Sokudo Lottery uses testnet Ether which you can get in one of the Rinkeby testnet faucets:
               </p>
               <ul className="mb-4">
                 <li><a href="https://faucet.rinkeby.io/" className="font-Ubuntu text-brendanPink font-bold">faucet.rinkeby.io</a></li>
@@ -125,7 +129,7 @@ export default function Home() {
         <div className="w-full">
           <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row pb-4">
             <div className="w-full md:w-1/2">
-              <h3>Description</h3>
+              <h3 className="text-2xl text-customYellow font-[Starduster]">Description</h3>
               <p>
                 This project is made using smart contract written in Solidity and Truffle. Frontend is made with Next.Js and Tailwing css
               </p>

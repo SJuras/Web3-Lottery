@@ -10,7 +10,9 @@ module.exports = {
       },
       colors: {
         customBlue: '#83a4be',
+        customLightBlue: '#9eccd1',
         customPurple: '#7441b7',
+        customLightPurple: '#9957ef',
         customYellow: '#fce372'
       },
     },
