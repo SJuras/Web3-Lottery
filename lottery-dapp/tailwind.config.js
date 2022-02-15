@@ -8,6 +8,11 @@ module.exports = {
       fontFamily: {
         starduster: ["Starduster", "sans-serif"],
       },
+      colors: {
+        customBlue: '#83a4be',
+        customPurple: '#7441b7',
+        customYellow: '#fce372'
+      },
     },
   },
   plugins: [],

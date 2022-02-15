@@ -24,10 +24,10 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <div className="cursor-pointer">
                 <Link href="/">
-                  <h1 className="font-[Starduster] text-4xl text-yellow-300 drop-shadow-lg drop-shadow-lg">SOKUDO</h1>
+                  <h1 className="font-[Starduster] text-4xl text-customYellow drop-shadow-lg drop-shadow-lg">SOKUDO</h1>
                 </Link>
             </div>
-            <div className="p-2 bg-purple-500 font-[Starduster] text-xl text-yellow-300 cursor-pointer drop-shadow-lg">
+            <div className="p-2 bg-customPurple font-[Starduster] text-xl text-customYellow cursor-pointer drop-shadow-lg">
               <button className="font-[Starduster] cursor-pointer">
                 Connect Wallet
               </button>

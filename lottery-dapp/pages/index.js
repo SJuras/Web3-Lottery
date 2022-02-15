@@ -36,21 +36,21 @@ export default function Home() {
           <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row h-screen justify-center items-center p-3">
             <div className="w-full md:w-1/2 flex justify-start items-center">
               <section>
-                <h2 className="font-[Starduster] text-8xl text-yellow-300 drop-shadow-lg">SOKUDO</h2>
-                <h4 className="font-[Starduster] text-8xl text-yellow-300 drop-shadow-lg mb-4">Lottery</h4>
-                <h4 className="font-[Starduster] text-8xl text-yellow-300 drop-shadow-lg mb-4">宝くじ</h4>
-                <h4 className="font-[Starduster] text-8xl text-yellow-300 drop-shadow-lg mb-4">лотерея</h4>
-                <h4 className="font-[Starduster] text-8xl text-yellow-300 drop-shadow-lg mb-4">लॉटरी</h4>
-                <h4 className="font-[Starduster] text-8xl text-yellow-300 drop-shadow-lg mb-4">վիճակախաղ</h4>
+                <h2 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg">SOKUDO</h2>
+                <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">Lottery</h4>
+                <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">宝くじ</h4>
+                <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">лотерея</h4>
+                <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">लॉटरी</h4>
+                <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">վիճակախաղ</h4>
               </section>
               <section>
-                <div className="p-2 bg-purple-500 font-[Starduster] text-2xl cursor-pointer drop-shadow-lg">
-                  <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-yellow-300">
-                    <p className="text-yellow-300 text-2xl">To Lottery</p>
+                <div className="p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg">
+                  <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
+                    <p className="text-customYellow text-2xl">To Lottery</p>
                   </Link>
                 </div>
-                <div className="p-2 bg-blue-300 font-[Starduster] text-2xl cursor-pointer drop-shadow-lg">
-                  <button href="/lotterypage" className="font-[Starduster] cursor-pointer text-yellow-300">
+                <div className="p-2 bg-customBlue font-[Starduster] text-2xl cursor-pointer drop-shadow-lg">
+                  <button href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
                     Learn More
                   </button>
                 </div>
@@ -75,64 +75,68 @@ export default function Home() {
       </main>
 
       {/* about */}
-      <div className="w-full bg-blue-300">
-        <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
-          <div className="w-full md:w-1/2">
-            <h3>Important!</h3>
-            <p className="">
-              Dapp Lottery uses testnet Ether only and is deployed to the Rinkeby testnet.
-            </p>
-            <p>
-              No real value is to be gained or distributed as the prize for winning and/or participating in this lottery.
-            </p>
-            <p>
-              This project exists for demonstration purposes only.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2">
+      <div className="w-full bg-customBlue">
+        <div className="w-full">
+          <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
+            <div className="w-full md:w-1/2">
+              <h3>Important!</h3>
+              <p className="">
+                Dapp Lottery uses testnet Ether only and is deployed to the Rinkeby testnet.
+              </p>
+              <p>
+                No real value is to be gained or distributed as the prize for winning and/or participating in this lottery.
+              </p>
+              <p>
+                This project exists for demonstration purposes only.
+              </p>
+            </div>
+            <div className="w-full md:w-1/2">
 
+            </div>
+          </div>
+        </div>
+
+        {/* instructions */}
+        <div className="w-full">
+          <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
+            <div className="w-full md:w-1/2">
+              <h3>How to Use</h3>
+              <p>
+                You are going to need a MetaMask wallet, if you don't have one installed yet you can download it here:
+              </p>
+              <a href="https://metamask.io/" className="">metamask.io</a>
+              <p>
+                Dapp Lottery is connected to the Rinkeby ether testnet, so you should connect your MetaMask wallet to
+                Rinkeby testnet.
+              </p>
+              <p>
+                Dapp Lottery uses testnet Ether which you can get in one of the Rinkeby testnet faucets:
+              </p>
+              <ul className="mb-4">
+                <li><a href="https://faucet.rinkeby.io/" className="font-Ubuntu text-brendanPink font-bold">faucet.rinkeby.io</a></li>
+                <li><a href="https://rinkeby.faucet.epirus.io/" className="font-Ubuntu text-brendanPink font-bold">rinkeby.faucet.epirus.io</a></li>
+                <li><a href="https://faucets.chain.link/rinkeby" className="font-Ubuntu text-brendanPink font-bold">faucets.chain.link/rinkeby</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* description */}
+        <div className="w-full">
+          <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row pb-4">
+            <div className="w-full md:w-1/2">
+              <h3>Description</h3>
+              <p>
+                This project is made using smart contract written in Solidity and Truffle. Frontend is made with Next.Js and Tailwing css
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* instructions */}
-      <div className="w-full bg-blue-300">
-        <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
-          <div className="w-full md:w-1/2">
-            <h3>How to Use</h3>
-            <p>
-              You are going to need a MetaMask wallet, if you don't have one installed yet you can download it here:
-            </p>
-            <a href="https://metamask.io/" className="">metamask.io</a>
-            <p>
-              Dapp Lottery is connected to the Rinkeby ether testnet, so you should connect your MetaMask wallet to
-              Rinkeby testnet.
-            </p>
-            <p>
-              Dapp Lottery uses testnet Ether which you can get in one of the Rinkeby testnet faucets:
-            </p>
-            <ul className="mb-4">
-              <li><a href="https://faucet.rinkeby.io/" className="font-Ubuntu text-brendanPink font-bold">faucet.rinkeby.io</a></li>
-              <li><a href="https://rinkeby.faucet.epirus.io/" className="font-Ubuntu text-brendanPink font-bold">rinkeby.faucet.epirus.io</a></li>
-              <li><a href="https://faucets.chain.link/rinkeby" className="font-Ubuntu text-brendanPink font-bold">faucets.chain.link/rinkeby</a></li>
-            </ul>
-          </div>
-        </div>
+      <div className="w-full bg-customPurple">
+        <Footer />
       </div>
-
-      {/* description */}
-      <div className="w-full bg-blue-300">
-        <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
-          <div className="w-full md:w-1/2">
-            <h3>Description</h3>
-            <p>
-              This project is made using smart contract written in Solidity and Truffle. Frontend is made with Next.Js and Tailwing css
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <Footer />
     </div>
   )
 }
