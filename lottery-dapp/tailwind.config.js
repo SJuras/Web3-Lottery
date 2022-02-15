@@ -13,7 +13,8 @@ module.exports = {
         customLightBlue: '#9eccd1',
         customPurple: '#7441b7',
         customLightPurple: '#9957ef',
-        customYellow: '#fce372'
+        customYellow: '#fce372',
+        customRed: '#b72d44',
       },
     },
   },
