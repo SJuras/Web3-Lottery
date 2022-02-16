@@ -34,14 +34,19 @@ export default function Home() {
         {/* main content */}
         <div className="w-full absolute z-50 min-h-full">
           <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row h-screen justify-center items-center p-3">
-            <div className="w-full md:w-1/2 flex justify-start items-center">
+            <div className="w-full md:w-1/2 flex flex-col justify-start items-center">
               <section>
                 <h2 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg">SOKUDO</h2>
                 <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">Lottery</h4>
-                <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">宝くじ</h4>
-                <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">лотерея</h4>
-                <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">लॉटरी</h4>
-                <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">վիճակախաղ</h4>
+                <div className="h-24 overflow-hidden mb-4">
+                  <div className="animate-[titleMove_10s_ease-in_infinite_alternate]">
+                  <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">宝くじ</h4>
+                  <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">Lotterie</h4>
+                  <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">лотерея</h4>
+                  <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">վիճակախաղ</h4>
+                  <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">लॉटरी</h4>
+                  </div>
+                </div>
               </section>
               <section>
                 <div className="p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
@@ -104,28 +109,34 @@ export default function Home() {
                   />
                 </div>
                 <div className="w-1/2">
-                  <div>
-                    <h4 className="text-4xl text-customRed font-[Starduster]">wArning</h4>
-                    <h4 className="text-4xl text-customRed font-[Starduster]">警告</h4>
-                    <h4 className="text-4xl text-customRed font-[Starduster]">WArnung</h4>
-                    <h4 className="text-4xl text-customRed font-[Starduster]">Figyelem</h4>
-                    <h4 className="text-4xl text-customRed font-[Starduster]">경고</h4>
-                    <h4 className="text-4xl text-customRed font-[Starduster]">upozorenje</h4>
-                    <h4 className="text-4xl text-customRed font-[Starduster]">uyAri</h4>
-                    <h4 className="text-4xl text-customRed font-[Starduster]">Avviso</h4>
-                    <h4 className="text-4xl text-customRed font-[Starduster]">चेतावनी</h4>
-                    <h4 className="text-4xl text-customRed font-[Starduster]">bridinAjums</h4>
+                  <div className="h-8 overflow-hidden mb-4">
+                    <div className="animate-[warningMove2_10s_ease-in_infinite_alternate]">
+                      <h4 className="text-4xl text-customRed font-[Starduster]">wArning</h4>
+                      <h4 className="text-4xl text-customRed font-[Starduster]">警告</h4>
+                      <h4 className="text-4xl text-customRed font-[Starduster]">WArnung</h4>
+                      <h4 className="text-4xl text-customRed font-[Starduster]">Figyelem</h4>
+                      <h4 className="text-4xl text-customRed font-[Starduster]">경고</h4>
+                      <h4 className="text-4xl text-customRed font-[Starduster]">upozorenje</h4>
+                      <h4 className="text-4xl text-customRed font-[Starduster]">uyAri</h4>
+                      <h4 className="text-4xl text-customRed font-[Starduster]">Avviso</h4>
+                      <h4 className="text-4xl text-customRed font-[Starduster]">चेतावनी</h4>
+                      <h4 className="text-4xl text-customRed font-[Starduster]">bridinAjums</h4>
+                    </div>
                   </div>
-                  <h5 className="text-2xl text-customRed font-[Starduster]">for testing purposes only</h5>
-                  <h5 className="text-2xl text-customRed font-[Starduster]">テスト目的のみ</h5>
-                  <h5 className="text-2xl text-customRed font-[Starduster]">nur zu Testzwecken</h5>
-                  <h5 className="text-2xl text-customRed font-[Starduster]">csAk tesztelés céljából</h5>
-                  <h5 className="text-2xl text-customRed font-[Starduster]">테스트 목적으로만</h5>
-                  <h5 className="text-2xl text-customRed font-[Starduster]">sAmo zA svrhe testirAnjA</h5>
-                  <h5 className="text-2xl text-customRed font-[Starduster]">sAdece test AmAçli</h5>
-                  <h5 className="text-2xl text-customRed font-[Starduster]">solo A scopo di test</h5>
-                  <h5 className="text-2xl text-customRed font-[Starduster]">केवल परीक्षण के उद्देश्य</h5>
-                  <h5 className="text-2xl text-customRed font-[Starduster]">tikAi testešanas nolukiem</h5>
+                  <div className="h-16 overflow-hidden mb-4">
+                    <div className="animate-[warningMove_10s_ease-in_infinite_alternate]">
+                      <h5 className="text-2xl text-customRed font-[Starduster]">for testing purposes only</h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster]">テスト目的のみ<br /></h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster]">nur zu Testzwecken</h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster]">csAk tesztelés céljából</h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster]">테스트 목적으로만<br /><br /></h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster]">sAmo zA svrhe testirAnjA</h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster]">sAdece test AmAçli</h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster]">solo A scopo di test</h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster]">केवल परीक्षण के उद्देश्य<br /><br /></h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster]">tikAi testešAnAs nolukiem</h5>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
