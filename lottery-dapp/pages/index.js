@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import Marquee from 'react-fast-marquee';
 
 import Footer from '../components/Footer.js';
 
@@ -71,75 +72,45 @@ export default function Home() {
                 <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">幸運を祈る</h4>
               </div>
             </div>
-            <div className="w-full h-12 bg-customYellow absolute z-100 bottom-20 overflow-hidden">
-              <div className="flex">
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+            <div className="w-full h-12 bg-customYellow absolute z-100 bottom-20 overflow-hidden flex items-center">
+              <Marquee pauseOnHover speed={80} gradient={false}>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
                   ETH: 1.5  ///
                 </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
                   BTC: 1.2  ///
                 </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
                   ALGO: 1.1  ///
                 </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
-                  TEX: 1  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
-                  BTC: 1.2  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
-                  NIT: 1  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
                   ETH: 1.5  ///
                 </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
                   BTC: 1.2  ///
                 </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
                   ALGO: 1.1  ///
                 </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
-                  TEX: 1  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
-                  BTC: 1.2  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
-                  NIT: 1  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
                   ETH: 1.5  ///
                 </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
                   BTC: 1.2  ///
                 </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
                   ALGO: 1.1  ///
                 </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
-                  TEX: 1  ///
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
+                  ETH: 1.5  ///
                 </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
                   BTC: 1.2  ///
                 </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
-                  NIT: 1  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
                   ALGO: 1.1  ///
                 </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
-                  TEX: 1  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
-                  BTC: 1.2  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
-                  NIT: 1  ///
-                </h4>
-              </div>
+              </Marquee>
             </div>
           </div>
         </div>
