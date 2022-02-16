@@ -35,7 +35,7 @@ export default function Home() {
         <div className="w-full absolute z-50 min-h-full">
           <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row h-screen justify-center items-center p-3">
             <div className="w-full md:w-1/2 flex flex-col justify-start items-center">
-              <section>
+              <section className="w-full">
                 <h2 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg">SOKUDO</h2>
                 <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">Lottery</h4>
                 <div className="h-24 overflow-hidden mb-4">
@@ -47,14 +47,15 @@ export default function Home() {
                   <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">लॉटरी</h4>
                   </div>
                 </div>
+                <h1 className="text-2xl font-[Starduster] text-customYellow mb-8">Ethereum Lottery dApp</h1>
               </section>
-              <section>
-                <div className="p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
+              <section className="flex w-1/2 md:w-full flex-col md:flex-row">
+                <div className="md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
                   <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
-                    <p className="text-customYellow text-2xl">To Lottery</p>
+                    <p className="text-customYellow text-2xl text-center">To Lottery</p>
                   </Link>
                 </div>
-                <div className="p-2 bg-customBlue font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightBlue">
+                <div className="text-center p-2 bg-customBlue font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightBlue">
                   <button href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
                     LeArn More
                   </button>
