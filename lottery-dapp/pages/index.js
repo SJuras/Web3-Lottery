@@ -4,11 +4,18 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Marquee from 'react-fast-marquee';
 
+import AwesomeSlider from 'react-awesome-slider';
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
+import 'react-awesome-slider/dist/styles.css';
+
 import Footer from '../components/Footer.js';
 
 import 'bulma/css/bulma.css';
 
 export default function Home() {
+
+  const AutoplaySlider = withAutoplay(AwesomeSlider);
+
   return (
     <div className="w-full">
       <Head>
@@ -64,7 +71,7 @@ export default function Home() {
               </section>
             </div>
             <div className="w-full md:w-1/2 h-full flex flex-col justify-center items-center relative">
-              <div className="w-3/4 flex justify-center items-center">
+              <div className="w-3/4 flex justify-center items-center animate-[modelBeep_15s_ease-in-out_infinite]">
                 <img src="/images/pinup1.png" className="h-full w-full" />
               </div>
               <div className="flex flex-col absolute top-20 right-0 z-100">
@@ -221,6 +228,21 @@ export default function Home() {
               <p>
                 This project is made using smart contract written in Solidity and Truffle. Frontend is made with Next.Js and Tailwing css
               </p>
+              <div className="bg-transparent">
+                <AutoplaySlider
+                    play={true}
+                    cancelOnInteraction={false} // should stop playing on user interaction
+                    interval={3000}
+                    organicArrows={false}
+                    bullets={false}
+                    sliderHeightPercentage={10}
+                    className="h-20"
+                  >
+                  <div className="bg-transparent" data-src="/images/pinup1.png" />
+                  <div className="bg-transparent" data-src="/images/pinup1.png" />
+                  <div className="bg-transparent" data-src="/images/pinup1.png" />
+                </AutoplaySlider>
+              </div>
             </div>
           </div>
         </div>

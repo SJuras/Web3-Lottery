@@ -47,7 +47,7 @@ export default function Home() {
               <div className="column is-two-thirds">
                 <section className="mt-5">
                   <p>Enter Lottery by sending 0.01 Ether</p>
-                  <button className="button is-link is-large is-light mt-3">
+                  <button className="mt-3 p-2 bg-customPurple text-customYellow font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
                     Play Now!
                   </button>
                   <h4 className="text-lg">Give it a try!</h4>
@@ -55,17 +55,17 @@ export default function Home() {
                 </section>
                 <section className="mt-6">
                   <p>Admin Only - Start the Lottery</p>
-                  <button className="button is-primary is-large is-light mt-3">
+                  <button className="mt-3 p-2 bg-customBlue text-customYellow font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightBlue">
                     Start Lottery
                   </button>
                 </section>
-                <div className="flex flex-col">
-                  <h4 className="text-xl font-[Starduster]">LAnguAge Selection</h4>
+                <div className="flex flex-col mt-8">
+                  <h4 className="text-xl font-[Starduster] mb-2">LAnguAge Selection</h4>
                   <div className="flex mb-4">
-                    <button onClick={() => changeValue(1)}>Lang 1</button>
-                    <button onClick={() => changeValue(2)}>Lang 2</button>
-                    <button onClick={() => changeValue(3)}>Lang 3</button>
-                    <button onClick={() => changeValue(4)}>Lang 4</button>
+                    <button className="p-2 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => changeValue(1)}>En / Ja</button>
+                    <button className="p-2 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => changeValue(2)}>Ko / Hu</button>
+                    <button className="p-2 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => changeValue(3)}>Hi / Hr</button>
+                    <button className="p-2 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => changeValue(4)}>Tr / Ur</button>
                   </div>
                   { value == 1 &&
                   <div className="flex flex-col md:flex-row">
