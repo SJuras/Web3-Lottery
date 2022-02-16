@@ -62,11 +62,11 @@ export default function Home() {
                 </div>
               </section>
             </div>
-            <div className="w-full md:w-1/2 h-full flex flex-col justify-center items-center">
+            <div className="w-full md:w-1/2 h-full flex flex-col justify-center items-center relative">
               <div className="w-3/4 flex justify-center items-center">
                 <img src="/images/pinup1.png" className="h-full w-full" />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col absolute top-20 right-0 z-100">
                 <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">Good Luck!</h4>
                 <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">幸運を祈る</h4>
               </div>
