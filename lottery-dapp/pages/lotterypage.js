@@ -65,6 +65,7 @@ export default function Home() {
                     <button onClick={() => changeValue(1)}>Lang 1</button>
                     <button onClick={() => changeValue(2)}>Lang 2</button>
                     <button onClick={() => changeValue(3)}>Lang 3</button>
+                    <button onClick={() => changeValue(4)}>Lang 4</button>
                   </div>
                   { value == 1 &&
                   <div className="flex flex-col md:flex-row">
@@ -224,6 +225,64 @@ export default function Home() {
                     </div>
                   </div>
                 }
+
+                { value == 4 &&
+                <div className="flex flex-col md:flex-row">
+                  <div className="w-full md:w-1/2">
+                    <section className="p-2">
+                      <h2 className="text-xl font-bold mb-2">Nasıl Oynanır</h2>
+                      <p>
+                        Kurallar basittir,
+                      </p>
+                      <p>
+                        Sağ üstteki butona tıklayın,
+                      </p>
+                      <p>
+                        Katılmak için ödeme yapmalısınız, 0.01 test Ether.
+                      </p>
+                      <p>
+                        Yönetici piyangoyu başlatacak. Yöneticiyle iletişime geç:
+                      </p>
+                      <a href="https://www.facebook.com/stjepko.juras" className="flex group"><span><FaFacebook className="inline transition duration-300 mr-1 group-hover:text-brendanPink -mt-1" /></span><p className="transition duration-300 group-hover:text-brendanPink">Facebook</p></a>
+                      <p>
+                        Rastgele sayı üretilecek.
+                      </p>
+                      <p>
+                        Rastgele sayı kazananı belirleyecek.
+                      </p>
+                    </section>
+                  </div>
+                  <div className="w-full md:w-1/2">
+                    <section className="p-2">
+                      <h2 className="text-xl font-bold mb-2 text-right">کیسے کھیلنا ہے</h2>
+                      <p className="text-right">
+                        قوانین سادہ ہیں
+                      </p>
+                      <p className="text-right">
+                        اوپر دائیں جانب بٹن پر کلک<br />
+                        کریں۔
+                      </p>
+                      <p className="text-right">
+                        حصہ لینے کے لیے آپ کو<br />
+                        ادائیگی کرنی ہوگی۔<br />
+                        0.01 test Ether
+                      </p>
+                      <p className="text-right">
+                        ایڈمن لاٹری شروع کرے گا۔<br />
+                        ایڈمن سے رابطہ کریں۔
+                      </p>
+                      <a href="https://www.facebook.com/stjepko.juras" className="flex group justify-end"><span><FaFacebook className="inline transition duration-300 mr-1 group-hover:text-brendanPink -mt-1" /></span><p className="transition duration-300 group-hover:text-brendanPink">Facebook</p></a>
+                      <p className="text-right">
+                        بے ترتیب نمبر تیار کیا جائے گا۔
+                      </p>
+                      <p className="text-right">
+                        بے ترتیب نمبر فاتح کا تعین کرے<br />
+                        گا۔
+                      </p>
+                    </section>
+                  </div>
+                </div>
+              }
 
                 </div>
               </div>
