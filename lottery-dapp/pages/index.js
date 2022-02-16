@@ -39,7 +39,7 @@ export default function Home() {
                 <h2 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg">SOKUDO</h2>
                 <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">Lottery</h4>
                 <div className="h-24 overflow-hidden mb-4">
-                  <div className="animate-[titleMove_10s_ease-in_infinite_alternate]">
+                  <div className="animate-[titleMove_10s_ease-in_infinite]">
                   <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">宝くじ</h4>
                   <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">Lotterie</h4>
                   <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">лотерея</h4>
@@ -61,10 +61,83 @@ export default function Home() {
                 </div>
               </section>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center items-center">
+            <div className="w-full md:w-1/2 h-full flex flex-col justify-center items-center">
+              <div className="w-3/4 flex justify-center items-center">
+                <img src="/images/pinup1.png" className="h-full w-full" />
+              </div>
               <div className="flex flex-col">
-                <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg">Good Luck!</h4>
-                <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg">幸運を祈る</h4>
+                <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">Good Luck!</h4>
+                <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">幸運を祈る</h4>
+              </div>
+            </div>
+            <div className="w-full h-12 bg-customYellow absolute z-100 bottom-20 overflow-hidden">
+              <div className="flex">
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  ETH: 1.5  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  BTC: 1.2  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  ALGO: 1.1  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  TEX: 1  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  BTC: 1.2  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  NIT: 1  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  ETH: 1.5  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  BTC: 1.2  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  ALGO: 1.1  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  TEX: 1  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  BTC: 1.2  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  NIT: 1  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  ETH: 1.5  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  BTC: 1.2  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  ALGO: 1.1  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  TEX: 1  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  BTC: 1.2  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  NIT: 1  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  ALGO: 1.1  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  TEX: 1  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  BTC: 1.2  ///
+                </h4>
+                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster]">
+                  NIT: 1  ///
+                </h4>
               </div>
             </div>
           </div>

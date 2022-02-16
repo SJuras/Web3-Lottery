@@ -50,8 +50,8 @@ export default function Home() {
                   <button className="button is-link is-large is-light mt-3">
                     Play Now!
                   </button>
-                  <h4>Give it a try!</h4>
-                  <h4>頑張って</h4>
+                  <h4 className="text-lg">Give it a try!</h4>
+                  <h4 className="text-lg">頑張って</h4>
                 </section>
                 <section className="mt-6">
                   <p>Admin Only - Start the Lottery</p>
