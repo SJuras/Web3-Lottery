@@ -105,7 +105,7 @@ export default function Home() {
               </Marquee>
             </div>
 
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row items-end">
               <div className="flex w-full md:w-2/3 flex-col h-full p-2">
                 <section className="md:mt-5">
 
@@ -134,6 +134,7 @@ export default function Home() {
                 </div>
 
                   <p>Enter Lottery by sending 0.01 Ether</p>
+                  <p>0.01Etherを送信して宝くじに参加する</p>
                   <button className="mt-3 p-2 bg-customPurple text-customYellow font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
                     PlAy Now!
                   </button>
@@ -390,7 +391,6 @@ export default function Home() {
                 </div>
               </div>
               <div className="hidden md:flex w-full md:w-1/3 flex-col h-full p-2">
-                <p>Lottery Info</p>
                 <section className="mt-5">
                   <div className="card">
                     <div className="card-content">

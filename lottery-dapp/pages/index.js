@@ -17,6 +17,7 @@ export default function Home() {
 
   const AutoplaySlider = withAutoplay(AwesomeSlider);
 
+  const [warnLang, setWarnLand] = useState(1);
   const [descLang, setDescLang] = useState(1);
   const [aboutLang, setAboutLang] = useState(1);
 
@@ -141,19 +142,107 @@ export default function Home() {
         <div className="w-full">
           <div className="w-full max-w-7xl mx-auto flex justify-center items-center flex-col md:flex-row mb-4 bg-zinc-800 rounded-xl border-4 border-customLightBlue drop-shadow-xl">
             <div className="w-full md:w-1/2 p-4">
-              <h3 className="text-2xl text-customRed font-[Starduster]">importAnt!</h3>
-              <p className="text-white">
-                Sokudo Lottery uses testnet Ether only and is deployed to the Rinkeby testnet.
-              </p>
-              <p className="text-white">
-                No real value is required to participate in the lottery.
-              </p>
-              <p className="text-white">
-                No real value is to be gained or distributed as the prize for winning and/or participating in this lottery.
-              </p>
-              <p className="text-white">
-                This project exists for demonstration purposes only.
-              </p>
+
+            <div className="w-full flex flex-col mb-4">
+              <h4 className="text-2xl font-[Starduster] text-customRed">lAnguAge Selection</h4>
+              <div className="w-full flex">
+                <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setWarnLand(1)}>En</button>
+                <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setWarnLand(2)}>Ja</button>
+                <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setWarnLand(3)}>Hi</button>
+                <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setWarnLand(4)}>Hu</button>
+                <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setWarnLand(5)}>Tr</button>
+              </div>
+            </div>
+            { warnLang == 1 &&
+              <div className="w-full">
+                <h3 className="text-2xl text-customRed font-[Starduster]">importAnt!</h3>
+                <p className="text-white">
+                  Sokudo Lottery uses testnet Ether only and is deployed to the Rinkeby testnet.
+                </p>
+                <p className="text-white">
+                  No real value is required to participate in the lottery.
+                </p>
+                <p className="text-white">
+                  No real value is to be gained or distributed as the prize for winning and/or participating in this lottery.
+                </p>
+                <p className="text-white">
+                  This project exists for demonstration purposes only.
+                </p>
+              </div>
+            }
+
+            { warnLang == 2 &&
+              <div className="w-full">
+                <h3 className="text-2xl text-customRed font-[Starduster] font-bold">重要!</h3>
+                <p className="text-white">
+                  SokudoLotteryはtestnetEtherのみを使用し、Rinkebyテストネットに展開されます.
+                </p>
+                <p className="text-white">
+                  宝くじに参加するのに実際の価値は必要ありません.
+                </p>
+                <p className="text-white">
+                  この宝くじの当選および/または参加の賞品として、実際の価値を獲得または分配することはできません。.
+                </p>
+                <p className="text-white">
+                  このプロジェクトは、デモンストレーション目的でのみ存在します。
+                </p>
+              </div>
+            }
+
+            { warnLang == 3 &&
+              <div className="w-full">
+                <h3 className="text-2xl text-customRed font-[Starduster] font-bold">जरूरी!</h3>
+                <p className="text-white">
+                  सोकुडो लॉटरी केवल टेस्टनेट ईथर का उपयोग करती है और इसे रिंकीबी टेस्टनेट पर तैनात किया जाता है।
+                </p>
+                <p className="text-white">
+                  लॉटरी में भाग लेने के लिए किसी वास्तविक मूल्य की आवश्यकता नहीं है।
+                </p>
+                <p className="text-white">
+                  इस लॉटरी में जीतने और/या भाग लेने के लिए पुरस्कार के रूप में कोई वास्तविक मूल्य प्राप्त या वितरित नहीं किया जाना है।
+                </p>
+                <p className="text-white">
+                  यह परियोजना केवल प्रदर्शन उद्देश्यों के लिए मौजूद है।
+                </p>
+              </div>
+            }
+
+            { warnLang == 4 &&
+              <div className="w-full">
+                <h3 className="text-2xl text-customRed font-[Starduster]">fontos!</h3>
+                <p className="text-white">
+                  A Sokudo Lottery csak a testnet Ether-t használja, és a Rinkeby teszthálózatra van telepítve.
+                </p>
+                <p className="text-white">
+                  A sorsoláson való részvételhez nincs szükség valós értékre.
+                </p>
+                <p className="text-white">
+                  A lottón nyerésért és/vagy részvételért valódi értéket nem lehet nyerni vagy kiosztani.
+                </p>
+                <p className="text-white">
+                  Ez a projekt csak demonstrációs célokat szolgál.
+                </p>
+              </div>
+            }
+
+            { warnLang == 5 &&
+              <div className="w-full">
+                <h3 className="text-2xl text-customRed font-[Starduster]">önemli!</h3>
+                <p className="text-white">
+                  Sokudo Piyango yalnızca test ağı Ether'i kullanır ve Rinkeby test ağına dağıtılır.
+                </p>
+                <p className="text-white">
+                  Piyangoya katılmak için gerçek bir değer gerekli değildir.
+                </p>
+                <p className="text-white">
+                  Bu piyangoyu kazanmanın ve/veya katılmanın ödülü olarak gerçek bir değer kazanılamaz veya dağıtılamaz.
+                </p>
+                <p className="text-white">
+                  Bu proje sadece tanıtım amaçlıdır.
+                </p>
+              </div>
+            }
+
             </div>
             <div className="w-full md:w-1/2 p-4">
               <div className="w-full flex justify-center items-center">
@@ -168,28 +257,28 @@ export default function Home() {
                   <div className="h-8 overflow-hidden mb-4">
                     <div className="animate-[warningMove2_10s_ease-in_infinite_alternate]">
                       <h4 className="text-4xl text-customRed font-[Starduster]">wArning</h4>
-                      <h4 className="text-4xl text-customRed font-[Starduster]">警告</h4>
+                      <h4 className="text-4xl text-customRed font-[Starduster] font-bold">警告</h4>
                       <h4 className="text-4xl text-customRed font-[Starduster]">WArnung</h4>
                       <h4 className="text-4xl text-customRed font-[Starduster]">Figyelem</h4>
-                      <h4 className="text-4xl text-customRed font-[Starduster]">경고</h4>
+                      <h4 className="text-4xl text-customRed font-[Starduster] font-bold">경고</h4>
                       <h4 className="text-4xl text-customRed font-[Starduster]">upozorenje</h4>
                       <h4 className="text-4xl text-customRed font-[Starduster]">uyAri</h4>
                       <h4 className="text-4xl text-customRed font-[Starduster]">Avviso</h4>
-                      <h4 className="text-4xl text-customRed font-[Starduster]">चेतावनी</h4>
+                      <h4 className="text-4xl text-customRed font-[Starduster] font-bold">चेतावनी</h4>
                       <h4 className="text-4xl text-customRed font-[Starduster]">bridinAjums</h4>
                     </div>
                   </div>
                   <div className="h-16 overflow-hidden mb-4">
                     <div className="animate-[warningMove_10s_ease-in_infinite_alternate]">
                       <h5 className="text-2xl text-customRed font-[Starduster]">for testing purposes only</h5>
-                      <h5 className="text-2xl text-customRed font-[Starduster]">テスト目的のみ<br /></h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster] font-bold">テスト目的のみ<br /></h5>
                       <h5 className="text-2xl text-customRed font-[Starduster]">nur zu Testzwecken</h5>
                       <h5 className="text-2xl text-customRed font-[Starduster]">csAk tesztelés céljából</h5>
-                      <h5 className="text-2xl text-customRed font-[Starduster]">테스트 목적으로만<br /><br /></h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster] font-bold">테스트 목적으로만</h5>
                       <h5 className="text-2xl text-customRed font-[Starduster]">sAmo zA svrhe testirAnjA</h5>
                       <h5 className="text-2xl text-customRed font-[Starduster]">sAdece test AmAçli</h5>
                       <h5 className="text-2xl text-customRed font-[Starduster]">solo A scopo di test</h5>
-                      <h5 className="text-2xl text-customRed font-[Starduster]">केवल परीक्षण के उद्देश्य<br /><br /></h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster] font-bold">केवल परीक्षण के उद्देश्य</h5>
                       <h5 className="text-2xl text-customRed font-[Starduster]">tikAi testešAnAs nolukiem</h5>
                     </div>
                   </div>
