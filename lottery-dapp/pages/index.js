@@ -202,7 +202,7 @@ export default function Home() {
         {/* instructions */}
         <div className="w-full">
           <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
-            <div className="w-full md:w-1/2 p-4 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
+            <div className="w-full md:w-1/2 p-4 rounded-xl border-0 border-customLightBlue drop-shadow-xl bg-white">
 
               <div className="w-full flex flex-col mb-4">
                 <h4 className="text-2xl font-[Starduster] text-customRed">lAnguAge Selection</h4>
@@ -243,7 +243,7 @@ export default function Home() {
                 <p className="mb-4">
                   Click here to go to lottery, good luck!
                 </p>
-                <div className="w-1/2 md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
+                <div className="w-full md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
                   <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
                     <p className="text-customYellow text-2xl text-center">To Lottery</p>
                   </Link>
@@ -280,7 +280,7 @@ export default function Home() {
               <p className="mb-4">
                 宝くじに行くにはここをクリックしてください!
               </p>
-              <div className="w-1/2 md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
+              <div className="w-full md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
                 <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
                   <p className="text-customYellow text-2xl text-center">宝くじに行く</p>
                 </Link>
@@ -318,7 +318,7 @@ export default function Home() {
             <p className="mb-4">
               लॉटरी में जाने के लिए यहां क्लिक करें, आप सौभाग्यशाली हों!
             </p>
-            <div className="w-1/2 md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
+            <div className="w-full md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
               <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
                 <p className="text-customYellow text-2xl text-center">लॉटरी में जाना</p>
               </Link>
@@ -353,7 +353,7 @@ export default function Home() {
           <p className="mb-4">
             kattintson ide a játékhoz. Sok szerencsét!
           </p>
-          <div className="w-1/2 md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
+          <div className="w-full md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
             <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
               <p className="text-customYellow text-2xl text-center">menj lottózni</p>
             </Link>
@@ -388,7 +388,7 @@ export default function Home() {
         <p className="mb-4">
           Piyangoya gitmek için buraya tıklayın, iyi şanslar!
         </p>
-        <div className="w-1/2 md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
+        <div className="w-full md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
           <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
             <p className="text-customYellow text-2xl text-center">piyAngoyA git</p>
           </Link>
@@ -397,6 +397,21 @@ export default function Home() {
     }
 
 
+            </div>
+            <div className="w-full md:w-1/2">
+              <div className="w-full flex justify-center md:justify-start items-center relative">
+                <div className="hidden md:flex w-2/3">
+                  <img src="/images/assistent1.png" className="h-full w-full" />
+                </div>
+                <div className="flex w-2/3 md:hidden">
+                  <img src="/images/assistent3.png" className="h-full w-full" />
+                </div>
+                <div className="hidden md:block absolute top-10 right-10 text-right">
+                  <h4 className="font-[Starduster] text-customYellow text-4xl drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">Welcome</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">ようこそ</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">स्वागत</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>

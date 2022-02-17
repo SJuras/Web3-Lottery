@@ -58,6 +58,11 @@ module.exports = {
           '30%': { transform: 'scale(1.5)'},
           '40%, 100%': { transform: 'scale(1)'},
         },
+        beep3: {
+          '0%': { transform: 'scale(1)'},
+          '50%': { transform: 'scale(1.5)'},
+          '60%, 100%': { transform: 'scale(1)'},
+        },
         modelBeep: {
           '0%': { transform: 'scale(1)'},
           '40%': { transform: 'scale(1.1)'},
@@ -70,6 +75,7 @@ module.exports = {
         warningMove2: 'warningMove 10s ease-in infinite alternate',
         beep1: 'beep1 10s ease-in-out infinite',
         beep2: 'beep1 10s ease-in-out infinite',
+        beep3: 'beep3 10s ease-in-out infinite',
         modelBeep: 'modelBeep 15s ease-in-out infinite',
       },
     },
