@@ -48,7 +48,7 @@ export default function Home() {
                 <section className="mt-5">
                   <p>Enter Lottery by sending 0.01 Ether</p>
                   <button className="mt-3 p-2 bg-customPurple text-customYellow font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
-                    Play Now!
+                    PlAy Now!
                   </button>
                   <h4 className="text-lg">Give it a try!</h4>
                   <h4 className="text-lg">頑張って</h4>
@@ -56,11 +56,11 @@ export default function Home() {
                 <section className="mt-6">
                   <p>Admin Only - Start the Lottery</p>
                   <button className="mt-3 p-2 bg-customBlue text-customYellow font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightBlue">
-                    Start Lottery
+                    StArt Lottery
                   </button>
                 </section>
-                <div className="flex flex-col mt-8">
-                  <h4 className="text-xl font-[Starduster] mb-2">LAnguAge Selection</h4>
+                <div className="flex flex-col mt-8 p-4 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
+                  <h4 className="text-xl font-[Starduster] text-customRed">LAnguAge Selection</h4>
                   <div className="flex mb-4">
                     <button className="p-2 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => changeValue(1)}>En / Ja</button>
                     <button className="p-2 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => changeValue(2)}>Ko / Hu</button>
@@ -71,7 +71,7 @@ export default function Home() {
                   <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-1/2">
                       <section className="p-2">
-                        <h2 className="text-xl font-bold mb-2">How to Play</h2>
+                        <h2 className="text-2xl text-customPurple font-[Starduster]">How to PlAy</h2>
                         <p>
                           Rules are simple,
                         </p>
@@ -95,7 +95,7 @@ export default function Home() {
                     </div>
                     <div className="w-full md:w-1/2">
                       <section className="p-2">
-                        <h2 className="text-xl font-bold mb-2">このゲームの遊び方</h2>
+                        <h2 className="text-2xl text-customPurple font-[Starduster]">このゲームの遊び方</h2>
                         <p>
                           ルールはシンプルです,
                         </p>
@@ -124,7 +124,7 @@ export default function Home() {
                   <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-1/2">
                       <section className="p-2">
-                        <h2 className="text-xl font-bold mb-2">그것을 재생하는 방법</h2>
+                        <h2 className="text-2xl text-customPurple font-[Starduster]">그것을 재생하는 방법</h2>
                         <p>
                           규칙은 간단하다,
                         </p>
@@ -148,7 +148,7 @@ export default function Home() {
                     </div>
                     <div className="w-full md:w-1/2">
                       <section className="p-2">
-                        <h2 className="text-xl font-bold mb-2">Hogyan kell Játszani</h2>
+                        <h2 className="text-2xl text-customPurple font-[Starduster]">HogyAn kell JAtszAni</h2>
                         <p>
                           A szabályok egyszerűek,
                         </p>
@@ -177,7 +177,7 @@ export default function Home() {
                   <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-1/2">
                       <section className="p-2">
-                        <h2 className="text-xl font-bold mb-2">कैसे खेलने के लिए</h2>
+                        <h2 className="text-2xl text-customPurple font-[Starduster]">कैसे खेलने के लिए</h2>
                         <p>
                           नियम सरल हैं,
                         </p>
@@ -201,7 +201,7 @@ export default function Home() {
                     </div>
                     <div className="w-full md:w-1/2">
                       <section className="p-2">
-                        <h2 className="text-xl font-bold mb-2">Upute za Igru</h2>
+                        <h2 className="text-2xl text-customPurple font-[Starduster]">Upute zA Igru</h2>
                         <p>
                           Pravila su jednostavna,
                         </p>
@@ -230,7 +230,7 @@ export default function Home() {
                 <div className="flex flex-col md:flex-row">
                   <div className="w-full md:w-1/2">
                     <section className="p-2">
-                      <h2 className="text-xl font-bold mb-2">Nasıl Oynanır</h2>
+                      <h2 className="text-2xl text-customPurple font-[Starduster]">NAsil OynAnir</h2>
                       <p>
                         Kurallar basittir,
                       </p>
@@ -254,7 +254,7 @@ export default function Home() {
                   </div>
                   <div className="w-full md:w-1/2">
                     <section className="p-2">
-                      <h2 className="text-xl font-bold mb-2 text-right">کیسے کھیلنا ہے</h2>
+                      <h2 className="text-2xl text-customPurple font-[Starduster] text-right">کیسے کھیلنا ہے</h2>
                       <p className="text-right">
                         قوانین سادہ ہیں
                       </p>

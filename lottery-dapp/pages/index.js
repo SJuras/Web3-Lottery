@@ -18,6 +18,7 @@ export default function Home() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
 
   const [descLang, setDescLang] = useState(1);
+  const [aboutLang, setAboutLang] = useState(1);
 
   return (
     <div className="w-full">
@@ -204,12 +205,13 @@ export default function Home() {
             <div className="w-full md:w-1/2">
 
               <div className="w-full flex flex-col mb-4">
-                <h4 className="text-2xl font-[Starduster] text-customRed">lAnguage Selection</h4>
+                <h4 className="text-2xl font-[Starduster] text-customRed">lAnguAge Selection</h4>
                 <div className="w-full flex">
                   <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setDescLang(1)}>En</button>
-                  <button className="p-2 px-4 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setDescLang(2)}>Ja</button>
+                  <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setDescLang(2)}>Ja</button>
                   <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setDescLang(3)}>Hi</button>
-                  <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setDescLang(4)}>Ur</button>
+                  <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setDescLang(4)}>Hu</button>
+                  <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setDescLang(5)}>Tr</button>
                 </div>
               </div>
 
@@ -316,23 +318,17 @@ export default function Home() {
         }
 
         { descLang == 4 &&
-        <div className="w-full text-right">
-          <h3 className="text-2xl text-customPurple font-[Starduster] text-right">استعمال کرنے کا طریقہ</h3>
-          <p className="text-right">
-            پ کو میٹا ماسک والیٹ کی <br />
-            ضرورت ہوگی۔ <br />
-            آپ اسے یہاں سے ڈاؤن لوڈ کر<br />
-            سکتے ہیں۔
-          </p>
-          <a href="https://metamask.io/" className="text-right text-customPurple font-bold transition duration-300 hover:text-customBlue">metamask.io</a>
+        <div className="w-full">
+          <h3 className="text-2xl text-customPurple font-[Starduster]">hogyAn kell hAsznAlni</h3>
           <p>
-            لاٹری رنکیبی ٹیسٹ نیٹ ورک <br />
-            سے منسلک ہے۔ <br />
-            اپنے Metamask کو <br />
-            Rinkeby سے جوڑیں۔
+            Szüksége lesz egy MetaMask pénztárcára, ezt itt tudod letölteni:
+          </p>
+          <a href="https://metamask.io/" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">metamask.io</a>
+          <p>
+            A Sokudo Lottery csatlakozik a Rinkeby ether teszthálózathoz, csatlakoztassa a MetaMask pénztárcáját a Rinkeby testnethez.
           </p>
           <p>
-            یہاں ٹیسٹ ایتھر حاصل کریں۔
+            A Sokudo Lottery a testnet Ethert használja, itt kaphatod meg:
           </p>
           <ul className="mb-4">
             <li><a href="https://faucet.rinkeby.io/" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">faucet.rinkeby.io</a></li>
@@ -340,21 +336,50 @@ export default function Home() {
             <li><a href="https://faucets.chain.link/rinkeby" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">faucets.chain.link/rinkeby</a></li>
           </ul>
           <p>
-            اب آپ کھیلنے کے لیے تیار ہیں۔
+            Most készen áll a játékra!
           </p>
           <p className="mb-4">
-            لاٹری میں جانے کے لیے یہاں <br />
-            کلک کریں۔
+            kattintson ide a játékhoz. Sok szerencsét!
           </p>
-          <div className="w-full flex justify-end">
-            <div className="w-1/2 md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
-              <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
-                <p className="text-customYellow text-2xl text-center">لاٹری میں جاؤ</p>
-              </Link>
-            </div>
+          <div className="w-1/2 md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
+            <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
+              <p className="text-customYellow text-2xl text-center">menj lottózni</p>
+            </Link>
           </div>
         </div>
       }
+
+      { descLang == 5 &&
+      <div className="w-full">
+        <h3 className="text-2xl text-customPurple font-[Starduster]">bu nAsil kullAnilir</h3>
+        <p>
+          Bir MetaMask cüzdanına ihtiyacınız olacak, buradan indirebilirsiniz:
+        </p>
+        <a href="https://metamask.io/" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">metamask.io</a>
+        <p>
+          Sokudo Piyango, Rinkeby ether test ağına bağlı, MetaMask cüzdanınızı Rinkeby testnet'e bağlayın.
+        </p>
+        <p>
+          Sokudo Piyango testnet Ether kullanıyor. Buradan alabilirsin:
+        </p>
+        <ul className="mb-4">
+          <li><a href="https://faucet.rinkeby.io/" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">faucet.rinkeby.io</a></li>
+          <li><a href="https://rinkeby.faucet.epirus.io/" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">rinkeby.faucet.epirus.io</a></li>
+          <li><a href="https://faucets.chain.link/rinkeby" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">faucets.chain.link/rinkeby</a></li>
+        </ul>
+        <p>
+          Oynamaya hazırsın!
+        </p>
+        <p className="mb-4">
+          Piyangoya gitmek için buraya tıklayın, iyi şanslar!
+        </p>
+        <div className="w-1/2 md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
+          <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
+            <p className="text-customYellow text-2xl text-center">piyAngoyA git</p>
+          </Link>
+        </div>
+      </div>
+    }
 
 
             </div>
@@ -363,27 +388,180 @@ export default function Home() {
 
         {/* description */}
         <div className="w-full">
-          <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row pb-4 p-4">
+          <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row pb-4 p-4 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
             <div className="w-full md:w-1/2">
-              <h3 className="text-2xl text-customYellow font-[Starduster]">Description</h3>
-              <p>
-                This project is made using smart contract written in Solidity and Truffle. Frontend is made with Next.Js and Tailwing css
-              </p>
-              <div className="bg-transparent">
-                <AutoplaySlider
-                    play={true}
-                    cancelOnInteraction={false} // should stop playing on user interaction
-                    interval={3000}
-                    organicArrows={false}
-                    bullets={false}
-                    sliderHeightPercentage={10}
-                    className="h-20"
-                  >
-                  <div className="bg-transparent" data-src="/images/pinup1.png" />
-                  <div className="bg-transparent" data-src="/images/pinup1.png" />
-                  <div className="bg-transparent" data-src="/images/pinup1.png" />
-                </AutoplaySlider>
+
+            <div className="w-full flex flex-col mb-4">
+              <h4 className="text-2xl font-[Starduster] text-customRed">lAnguAge Selection</h4>
+              <div className="w-full flex">
+                <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setAboutLang(1)}>En</button>
+                <button className="p-2 px-4 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setAboutLang(2)}>Ja</button>
+                <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setAboutLang(3)}>Hi</button>
+                <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setAboutLang(4)}>Hu</button>
+                <button className="p-2 px-4 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => setAboutLang(5)}>Tr</button>
               </div>
+            </div>
+
+            { aboutLang == 1 &&
+              <div className="w-full">
+                <h3 className="text-2xl text-customPurple font-[Starduster]">About</h3>
+                <p className="mb-2">
+                  This project is made using smart contract written in Solidity and Truffle. Frontend is made with Next.Js and Tailwing css
+                </p>
+                <p className="mb-2">
+                  UI design was heavily inspired by the visual style of Blade Runner and Cyberpunk genre, <br />
+                  one key feature of such style is the presence of multitude of languages mashed together to form a vibrant,
+                  multicultural futuristic setting.
+                </p>
+                <p className="mb-2">
+                  Since the author of this dApp is not a proficient linguist, he did the best he could using Google translate and similar
+                  translation services while writting the text. Therefor, apologies for any grammar mistakes which are surely present.
+                </p>
+                <div className="bg-transparent">
+                  <AutoplaySlider
+                      play={true}
+                      cancelOnInteraction={false} // should stop playing on user interaction
+                      interval={3000}
+                      organicArrows={false}
+                      bullets={false}
+                      sliderHeightPercentage={10}
+                      className="h-20"
+                    >
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                  </AutoplaySlider>
+                </div>
+              </div>
+            }
+
+            { aboutLang == 2 &&
+              <div className="w-full">
+                <h3 className="text-2xl text-customPurple font-[Starduster]">プロジェクトについて</h3>
+                <p className="mb-2">
+                  このプロジェクトは、SolidityとTruffleで書かれたスマートコントラクトを使用して作成されています. フロントエンドはNext.JsとTailwingcssで作られています
+                </p>
+                <p className="mb-2">
+                  UIデザインは、ブレードランナーとサイバーパンクのジャンルの視覚スタイルに大きく影響を受けました <br />
+                  このようなスタイルの重要な特徴の1つは、活気に満ちた多文化の未来的な設定を形成するために多数の言語がマッシュアップされていることです。
+                </p>
+                <p className="mb-2">
+                  このdAppの作成者は熟練した言語学者ではないため、テキストを書きながら、Google翻訳や同様の翻訳サービスを使用してできる限りのことをしました。<br />
+                  そのため、確かに存在する文法の間違いについてお詫び申し上げます。
+                </p>
+                <div className="bg-transparent">
+                  <AutoplaySlider
+                      play={true}
+                      cancelOnInteraction={false} // should stop playing on user interaction
+                      interval={3000}
+                      organicArrows={false}
+                      bullets={false}
+                      sliderHeightPercentage={10}
+                      className="h-20"
+                    >
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                  </AutoplaySlider>
+                </div>
+              </div>
+            }
+
+            { aboutLang == 3 &&
+              <div className="w-full">
+                <h3 className="text-2xl text-customPurple font-[Starduster]">इस परियोजना के बारे में</h3>
+                <p className="mb-2">
+                  यह प्रोजेक्ट सॉलिडिटी और ट्रफल में लिखे स्मार्ट कॉन्ट्रैक्ट का उपयोग करके बनाया गया है। फ़्रंटएंड Next.Js और Tailwing css के साथ बनाया गया है.
+                </p>
+                <p className="mb-2">
+                  UI डिज़ाइन ब्लेड रनर और साइबरपंक शैली की दृश्य शैली से बहुत अधिक प्रेरित था, <br />
+                  इस तरह की शैली की एक प्रमुख विशेषता एक जीवंत, बहुसांस्कृतिक भविष्यवादी सेटिंग बनाने के लिए एक साथ कई भाषाओं की उपस्थिति है।.
+                </p>
+                <p className="mb-2">
+                  इस डीएपी के लेखक एक कुशल भाषाविद् नहीं हैं, पाठ लिखते समय उन्होंने Google अनुवाद और इसी तरह की अनुवाद सेवाओं का उपयोग करने के लिए हर संभव प्रयास किया.
+                  इसलिए, किसी भी व्याकरण की गलतियों के लिए क्षमा चाहते हैं जो निश्चित रूप से मौजूद हैं।
+                </p>
+                <div className="bg-transparent">
+                  <AutoplaySlider
+                      play={true}
+                      cancelOnInteraction={false} // should stop playing on user interaction
+                      interval={3000}
+                      organicArrows={false}
+                      bullets={false}
+                      sliderHeightPercentage={10}
+                      className="h-20"
+                    >
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                  </AutoplaySlider>
+                </div>
+              </div>
+            }
+
+            { aboutLang == 4 &&
+              <div className="w-full">
+                <h3 className="text-2xl text-customPurple font-[Starduster]">Errol A Projektrol</h3>
+                <p className="mb-2">
+                  Ez a projekt Solidity és Truffle nyelven írt intelligens szerződéssel készült. A frontend Next.Js és Tailwing css segítségével készült.
+                </p>
+                <p className="mb-2">
+                  A felhasználói felület kialakítását erősen a Blade Runner és a Cyberpunk műfaj vizuális stílusa ihlette, <br />
+                  Ennek a stílusnak az egyik legfontosabb jellemzője a sokféle nyelv jelenléte, amelyek egy élénk, multikulturális futurisztikus környezetet alkotnak.
+                </p>
+                <p className="mb-2">
+                  Mivel ennek a dApp-nak a szerzője nem jártas nyelvész, minden tőle telhetőt megtett a Google fordító és a hasonló fordítói szolgáltatások segítségével a szövegírás közben.
+                  Ezért elnézést a nyelvtani hibákért, amelyek biztosan előfordulnak.
+                </p>
+                <div className="bg-transparent">
+                  <AutoplaySlider
+                      play={true}
+                      cancelOnInteraction={false} // should stop playing on user interaction
+                      interval={3000}
+                      organicArrows={false}
+                      bullets={false}
+                      sliderHeightPercentage={10}
+                      className="h-20"
+                    >
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                  </AutoplaySlider>
+                </div>
+              </div>
+            }
+
+            { aboutLang == 5 &&
+              <div className="w-full">
+                <h3 className="text-2xl text-customPurple font-[Starduster]">bu proje hAkkindA</h3>
+                <p className="mb-2">
+                  Bu proje, Solidity ve Truffle ile yazılmış akıllı sözleşme kullanılarak yapılmıştır. Frontend, Next.Js ve Tailwing css ile yapılır.
+                </p>
+                <p className="mb-2">
+                  UI tasarımı, Blade Runner ve Cyberpunk türünün görsel tarzından büyük ölçüde ilham aldı, <br />
+                  Bu tarz bir tarzın temel özelliklerinden biri, canlı, çok kültürlü fütüristik bir ortam oluşturmak için bir araya getirilmiş çok sayıda dilin varlığıdır.
+                </p>
+                <p className="mb-2">
+                  Bu dApp'nin yazarı yetkin bir dilbilimci değil, metni yazarken Google çeviri ve benzeri çeviri hizmetlerini kullanarak elinden gelenin en iyisini yaptı. Bu nedenle, kesinlikle mevcut olan herhangi bir dilbilgisi hatası için özür dilerim.
+                </p>
+                <div className="bg-transparent">
+                  <AutoplaySlider
+                      play={true}
+                      cancelOnInteraction={false} // should stop playing on user interaction
+                      interval={3000}
+                      organicArrows={false}
+                      bullets={false}
+                      sliderHeightPercentage={10}
+                      className="h-20"
+                    >
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                    <div className="bg-transparent" data-src="/images/pinup1.png" />
+                  </AutoplaySlider>
+                </div>
+              </div>
+            }
+
             </div>
           </div>
         </div>
