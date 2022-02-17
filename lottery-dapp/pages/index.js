@@ -137,7 +137,7 @@ export default function Home() {
         <div className="w-full">
           <div className="w-full max-w-7xl mx-auto flex justify-center items-center flex-col md:flex-row mb-4 bg-zinc-800 rounded-xl border-4 border-customLightBlue drop-shadow-xl">
             <div className="w-full md:w-1/2 p-4">
-              <h3 className="text-2xl text-customRed font-[Starduster]">important!</h3>
+              <h3 className="text-2xl text-customRed font-[Starduster]">importAnt!</h3>
               <p className="text-white">
                 Sokudo Lottery uses testnet Ether only and is deployed to the Rinkeby testnet.
               </p>
@@ -197,13 +197,13 @@ export default function Home() {
 
         {/* instructions */}
         <div className="w-full">
-          <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4 p-4">
+          <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4 p-4 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
             <div className="w-full md:w-1/2">
-              <h3 className="text-2xl text-customYellow font-[Starduster]">How to Use</h3>
+              <h3 className="text-2xl text-customPurple font-[Starduster]">How to Use</h3>
               <p>
                 You are going to need a MetaMask wallet, if you don't have one installed yet you can download it here:
               </p>
-              <a href="https://metamask.io/" className="">metamask.io</a>
+              <a href="https://metamask.io/" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">metamask.io</a>
               <p>
                 Sokudo Lottery is connected to the Rinkeby ether testnet, so you should connect your MetaMask wallet to
                 Rinkeby testnet.
@@ -212,10 +212,21 @@ export default function Home() {
                 Sokudo Lottery uses testnet Ether which you can get in one of the Rinkeby testnet faucets:
               </p>
               <ul className="mb-4">
-                <li><a href="https://faucet.rinkeby.io/" className="font-Ubuntu text-brendanPink font-bold">faucet.rinkeby.io</a></li>
-                <li><a href="https://rinkeby.faucet.epirus.io/" className="font-Ubuntu text-brendanPink font-bold">rinkeby.faucet.epirus.io</a></li>
-                <li><a href="https://faucets.chain.link/rinkeby" className="font-Ubuntu text-brendanPink font-bold">faucets.chain.link/rinkeby</a></li>
+                <li><a href="https://faucet.rinkeby.io/" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">faucet.rinkeby.io</a></li>
+                <li><a href="https://rinkeby.faucet.epirus.io/" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">rinkeby.faucet.epirus.io</a></li>
+                <li><a href="https://faucets.chain.link/rinkeby" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">faucets.chain.link/rinkeby</a></li>
               </ul>
+              <p>
+                Once you get test Ether you are ready to play!
+              </p>
+              <p className="mb-4">
+                Click here to go to lottery, good luck!
+              </p>
+              <div className="w-1/2 md:w-1/3 md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
+                <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
+                  <p className="text-customYellow text-2xl text-center">To Lottery</p>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
