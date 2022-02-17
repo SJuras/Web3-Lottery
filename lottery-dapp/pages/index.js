@@ -411,6 +411,11 @@ export default function Home() {
                   <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">ようこそ</h4>
                   <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">स्वागत</h4>
                 </div>
+                <div className="hidden md:block absolute bottom-0 right-10 text-right">
+                  <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">어서 오십시오</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-4xl drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">Üdvözöljük</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-4xl drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">Hos geldin</h4>
+                </div>
               </div>
             </div>
           </div>

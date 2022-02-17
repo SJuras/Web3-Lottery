@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
+import Marquee from 'react-fast-marquee';
+
 import { FaFacebook } from "react-icons/fa";
 
 import Footer from '../components/Footer.js';
@@ -43,6 +45,66 @@ export default function Home() {
         {/* main content */}
         <div className="w-full max-w-7xl mx-auto mt-4 mb-4">
           <section className="mt-5">
+
+            <div className="w-full h-12 bg-customYellow overflow-hidden flex items-center">
+              <Marquee pauseOnHover speed={80} gradient={false}>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  Good luck!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4 font-bold">
+                  행운을 빕니다!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  sok szerencsét!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  powodzeniA!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4 font-bold">
+                  اچھی قسمت
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  iyi SAnslAr!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4 font-bold">
+                  祝你好運!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  viel Glück!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  noroc!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  sretno!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  זאָל זייַנ מיט מאַזל
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4 font-bold">
+                  удачи!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  NgikufiselA inhlAnhlA!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  buonA fortunA!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  幸運を!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  beAnnAchd leAt!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4 font-bold">
+                  амжилт хүсье!
+                </h4>
+                <h4 className="text-2xl font-bold text-customPurple font-[Starduster] mx-4">
+                  onneA!
+                </h4>
+              </Marquee>
+            </div>
+
             <div className="flex flex-col md:flex-row">
               <div className="flex w-full md:w-2/3 flex-col h-full p-2">
                 <section className="md:mt-5">
@@ -385,6 +447,7 @@ export default function Home() {
                           <div className="w-full p-2">
                             <h2 className="text-center text-customYellow font-[Starduster]">Clouch.com</h2>
                             <p className="text-center">Crypto Wallet and Social Network</p>
+                            <p className="text-center">暗号通貨ウォレットとソーシャルネットワーク</p>
                           </div>
                         </div>
                       </div>
