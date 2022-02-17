@@ -25,14 +25,14 @@ export default function Home() {
 
       <main className="">
       {/* navbar */}
-        <nav className="w-full max-w-7xl mx-auto pt-4 mb-4">
+        <nav className="w-full max-w-7xl mx-auto pt-4 mb-4 px-2 md:px-0">
           <div className="flex justify-between items-center">
             <div className="cursor-pointer">
                 <Link href="/">
-                  <h1 className="font-[Starduster] text-4xl text-customYellow drop-shadow-lg drop-shadow-lg">SOKUDO</h1>
+                  <h1 className="font-[Starduster] text-2xl md:text-4xl text-customYellow drop-shadow-lg drop-shadow-lg">SOKUDO</h1>
                 </Link>
             </div>
-            <div className="p-2 bg-customPurple font-[Starduster] text-xl text-customYellow cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
+            <div className="p-1 text-lg md:p-2 bg-customPurple font-[Starduster] md:text-2xl text-customYellow cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
               <button className="font-[Starduster] cursor-pointer">
                 Connect WAllet
               </button>
@@ -43,9 +43,34 @@ export default function Home() {
         {/* main content */}
         <div className="w-full max-w-7xl mx-auto mt-4 mb-4">
           <section className="mt-5">
-            <div className="columns">
-              <div className="column is-two-thirds">
-                <section className="mt-5">
+            <div className="flex flex-col md:flex-row">
+              <div className="flex w-full md:w-2/3 flex-col h-full p-2">
+                <section className="md:mt-5">
+
+                <div className="flex flex-col md:hidden w-full mb-5">
+                  <div className="w-full mb-2 p-2 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
+                    <h4 className="text-xl font-[Starduster] text-customPurple">Lottery History</h4>
+                    <h4 className="text-xl font-[Starduster] text-customPurple">沿革</h4>
+                    <p>Lottery #1 Winner:</p>
+                    <p>勝者</p>
+                    <div className="w-full">
+                      <a href="" target="_blank">7585869695947373636346586896769</a>
+                    </div>
+                  </div>
+                  <div className="w-full mb-2 p-2 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
+                    <h4 className="text-xl font-[Starduster] text-customPurple">PlAyers</h4>
+                    <h4 className="text-xl font-[Starduster] text-customPurple">プレイヤー</h4>
+                    <div className="w-full">
+                      <a href="" target="_blank">7585869695947373636346586896769</a>
+                    </div>
+                  </div>
+                  <div className="w-full mb-2 p-2 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
+                    <h4 className="text-xl font-[Starduster] text-customPurple">Pot</h4>
+                    <h4 className="text-xl font-[Starduster] text-customPurple">総計</h4>
+                    <p>10 Ether</p>
+                  </div>
+                </div>
+
                   <p>Enter Lottery by sending 0.01 Ether</p>
                   <button className="mt-3 p-2 bg-customPurple text-customYellow font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
                     PlAy Now!
@@ -55,11 +80,27 @@ export default function Home() {
                 </section>
                 <section className="mt-6">
                   <p>Admin Only - Start the Lottery</p>
+                  <p>管理者のみ - 宝くじを開始します</p>
                   <button className="mt-3 p-2 bg-customBlue text-customYellow font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightBlue">
                     StArt Lottery
                   </button>
                 </section>
-                <div className="flex flex-col mt-8 p-4 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
+
+                <div className="flex flex-row md:hidden w-full my-2 p-2 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
+                  <div className="w-1/2 flex justify-center">
+                    <div className="w-1/2">
+                      <a href="https://www.clouch.com/?ref=jaysarif">
+                        <img src="/images/clouch.png" className="h-full w-full" />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="w-1/2">
+                    <h4 className="font-[Starduster]">Clouch.com</h4>
+                    <h5>Crypto Wallet and Social Network</h5>
+                  </div>
+                </div>
+
+                <div className="flex flex-col md:mt-8 p-4 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
                   <h4 className="text-xl font-[Starduster] text-customRed">LAnguAge Selection</h4>
                   <div className="flex mb-4">
                     <button className="p-2 mr-2 bg-customYellow text-customPurple font-bold rounded transition duration-300 hover:bg-customPurple hover:text-customYellow" onClick={() => changeValue(1)}>En / Ja</button>
@@ -286,7 +327,7 @@ export default function Home() {
 
                 </div>
               </div>
-              <div className="column is-one-third">
+              <div className="hidden md:flex w-full md:w-1/3 flex-col h-full p-2">
                 <p>Lottery Info</p>
                 <section className="mt-5">
                   <div className="card">
@@ -325,6 +366,27 @@ export default function Home() {
                         <h2 className="text-xl text-customYellow font-[Starduster]">Pot</h2>
                         <h2 className="text-xl text-customYellow font-[Starduster]">総計</h2>
                         <p>10 Ether</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section className="mt-5">
+                  <div className="card">
+                    <div className="card-content">
+                      <div className="content">
+                        <div className="flex flex-col justify-center">
+                          <div className="w-full p-2 flex justify-center">
+                              <div className="w-1/2 h-1/2">
+                                <a href="https://www.clouch.com/?ref=jaysarif">
+                                  <img src="/images/clouch.png" className="h-full w-full" />
+                                </a>
+                              </div>
+                          </div>
+                          <div className="w-full p-2">
+                            <h2 className="text-center text-customYellow font-[Starduster]">Clouch.com</h2>
+                            <p className="text-center">Crypto Wallet and Social Network</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

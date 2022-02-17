@@ -201,8 +201,8 @@ export default function Home() {
 
         {/* instructions */}
         <div className="w-full">
-          <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4 p-4 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
-            <div className="w-full md:w-1/2">
+          <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
+            <div className="w-full md:w-1/2 p-4 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
 
               <div className="w-full flex flex-col mb-4">
                 <h4 className="text-2xl font-[Starduster] text-customRed">lAnguAge Selection</h4>
@@ -218,6 +218,9 @@ export default function Home() {
               { descLang == 1 &&
               <div className="w-full">
                 <h3 className="text-2xl text-customPurple font-[Starduster]">How to Use</h3>
+                <p>
+                  Hello, I am Sindi. I will be your virtual host.
+                </p>
                 <p>
                   You are going to need a MetaMask wallet, if you don't have one installed yet you can download it here:
                 </p>
@@ -252,6 +255,9 @@ export default function Home() {
             <div className="w-full">
               <h3 className="text-2xl text-customPurple font-[Starduster]">それの使い方</h3>
               <p>
+                こんにちは、シンディです, 私があなたのホストになります
+              </p>
+              <p>
                 MetaMaskウォレットが必要になります, <br />こちらからダウンロードできます:
               </p>
               <a href="https://metamask.io/" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">metamask.io</a>
@@ -285,6 +291,9 @@ export default function Home() {
           { descLang == 3 &&
           <div className="w-full">
             <h3 className="text-2xl text-customPurple font-[Starduster]">कैसे इस्तेमाल करे</h3>
+            <p>
+              हैलो, मैं सिंधी हूँ, मैं आपका मेजबान बनूंगा.
+            </p>
             <p>
               आपको मेटामास्क वॉलेट की आवश्यकता होगी, <br />
               आप द्वारा इसे यहां पर डाउनलोड किया जा सकता है:
@@ -321,6 +330,9 @@ export default function Home() {
         <div className="w-full">
           <h3 className="text-2xl text-customPurple font-[Starduster]">hogyAn kell hAsznAlni</h3>
           <p>
+            Hello, Sindi vagyok, én leszek a házigazdád.
+          </p>
+          <p>
             Szüksége lesz egy MetaMask pénztárcára, ezt itt tudod letölteni:
           </p>
           <a href="https://metamask.io/" className="text-customPurple font-bold transition duration-300 hover:text-customBlue">metamask.io</a>
@@ -352,6 +364,9 @@ export default function Home() {
       { descLang == 5 &&
       <div className="w-full">
         <h3 className="text-2xl text-customPurple font-[Starduster]">bu nAsil kullAnilir</h3>
+        <p>
+          Merhaba ben Sindi, senin ev sahibin olacağım.
+        </p>
         <p>
           Bir MetaMask cüzdanına ihtiyacınız olacak, buradan indirebilirsiniz:
         </p>
