@@ -748,6 +748,10 @@ export default function Home() {
                 <p className="mb-2">
                   This project is made using smart contract written in Solidity and Truffle. Frontend is made with Next.Js and Tailwing css
                 </p>
+                <p>
+                  Project also features real-time prices of top 15 cryptocurrencies, using Coingecko API.
+                </p>
+                <a href="https://www.coingecko.com/" className="font-bold text-customPurple transition duration-300 hover:text-customBlue">coingecko.com</a>
                 <p className="mb-2">
                   UI design was heavily inspired by the visual style of Blade Runner and Cyberpunk genre, <br />
                   one key feature of such style is the presence of multitude of languages mashed together to form a vibrant,
@@ -781,6 +785,10 @@ export default function Home() {
                 <p className="mb-2">
                   このプロジェクトは、SolidityとTruffleで書かれたスマートコントラクトを使用して作成されています. フロントエンドはNext.JsとTailwingcssで作られています
                 </p>
+                <p>
+                  プロジェクトはまた、Coingecko APIを使用して、上位15の暗号通貨のリアルタイム価格を特徴としています。
+                </p>
+                <a href="https://www.coingecko.com/" className="font-bold text-customPurple transition duration-300 hover:text-customBlue">coingecko.com</a>
                 <p className="mb-2">
                   UIデザインは、ブレードランナーとサイバーパンクのジャンルの視覚スタイルに大きく影響を受けました <br />
                   このようなスタイルの重要な特徴の1つは、活気に満ちた多文化の未来的な設定を形成するために多数の言語がマッシュアップされていることです。
@@ -813,6 +821,10 @@ export default function Home() {
                 <p className="mb-2">
                   यह प्रोजेक्ट सॉलिडिटी और ट्रफल में लिखे स्मार्ट कॉन्ट्रैक्ट का उपयोग करके बनाया गया है। फ़्रंटएंड Next.Js और Tailwing css के साथ बनाया गया है.
                 </p>
+                <p>
+                  प्रोजेक्ट में Coingecko API का उपयोग करते हुए शीर्ष 15 क्रिप्टोकरेंसी की रीयल-टाइम कीमतें भी शामिल हैं।
+                </p>
+                <a href="https://www.coingecko.com/" className="font-bold text-customPurple transition duration-300 hover:text-customBlue">coingecko.com</a>
                 <p className="mb-2">
                   UI डिज़ाइन ब्लेड रनर और साइबरपंक शैली की दृश्य शैली से बहुत अधिक प्रेरित था, <br />
                   इस तरह की शैली की एक प्रमुख विशेषता एक जीवंत, बहुसांस्कृतिक भविष्यवादी सेटिंग बनाने के लिए एक साथ कई भाषाओं की उपस्थिति है।.
@@ -845,6 +857,10 @@ export default function Home() {
                 <p className="mb-2">
                   Ez a projekt Solidity és Truffle nyelven írt intelligens szerződéssel készült. A frontend Next.Js és Tailwing css segítségével készült.
                 </p>
+                <p>
+                  A projekt a Coingecko API használatával a 15 legnépszerűbb kriptovaluta valós idejű árait is tartalmazza.
+                </p>
+                <a href="https://www.coingecko.com/" className="font-bold text-customPurple transition duration-300 hover:text-customBlue">coingecko.com</a>
                 <p className="mb-2">
                   A felhasználói felület kialakítását erősen a Blade Runner és a Cyberpunk műfaj vizuális stílusa ihlette, <br />
                   Ennek a stílusnak az egyik legfontosabb jellemzője a sokféle nyelv jelenléte, amelyek egy élénk, multikulturális futurisztikus környezetet alkotnak.
@@ -877,6 +893,10 @@ export default function Home() {
                 <p className="mb-2">
                   Bu proje, Solidity ve Truffle ile yazılmış akıllı sözleşme kullanılarak yapılmıştır. Frontend, Next.Js ve Tailwing css ile yapılır.
                 </p>
+                <p>
+                  Proje ayrıca Coingecko API'sini kullanarak en iyi 15 kripto para biriminin gerçek zamanlı fiyatlarını da sunuyor.
+                </p>
+                <a href="https://www.coingecko.com/" className="font-bold text-customPurple transition duration-300 hover:text-customBlue">coingecko.com</a>
                 <p className="mb-2">
                   UI tasarımı, Blade Runner ve Cyberpunk türünün görsel tarzından büyük ölçüde ilham aldı, <br />
                   Bu tarz bir tarzın temel özelliklerinden biri, canlı, çok kültürlü fütüristik bir ortam oluşturmak için bir araya getirilmiş çok sayıda dilin varlığıdır.
