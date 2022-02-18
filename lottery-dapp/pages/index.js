@@ -55,7 +55,7 @@ export default function Home() {
         <nav className="w-full mb-4 absolute z-50 top-0">
           <div className="flex justify-between items-center w-full max-w-7xl mx-auto p-3 mt-4">
             <div className="">
-                <h1 className="font-[Starduster] text-4xl text-yellow-300 drop-shadow-lg drop-shadow-lg">SOKUDO</h1>
+                <h1 className="font-[Starduster] text-4xl text-customYellow drop-shadow-lg drop-shadow-lg">SOKUDO</h1>
             </div>
             <div className="hidden p-2 bg-purple-500 font-[Starduster] text-xl text-yellow-300 cursor-pointer drop-shadow-lg">
               <button className="font-[Starduster] cursor-pointer">
@@ -70,15 +70,15 @@ export default function Home() {
           <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row h-screen justify-center items-center p-3">
             <div className="w-full md:w-1/2 flex flex-col justify-start items-center">
               <section className="w-full">
-                <h2 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg">SOKUDO</h2>
-                <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">Lottery</h4>
-                <div className="h-24 overflow-hidden mb-4">
+                <h2 className="font-[Starduster] text-4xl md:text-8xl text-customYellow drop-shadow-lg">SOKUDO</h2>
+                <h4 className="font-[Starduster] text-4xl md:text-8xl text-customYellow drop-shadow-lg mb-4">Lottery</h4>
+                <div className="hidden md:flex md:h-24 overflow-hidden mb-4">
                   <div className="animate-[titleMove_10s_ease-in_infinite]">
-                  <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">宝くじ</h4>
-                  <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">Lotterie</h4>
-                  <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">лотерея</h4>
-                  <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">վիճակախաղ</h4>
-                  <h4 className="font-[Starduster] text-8xl text-customYellow drop-shadow-lg mb-4">लॉटरी</h4>
+                  <h4 className="font-[Starduster] text-4xl md:text-8xl text-customYellow drop-shadow-lg mb-4">宝くじ</h4>
+                  <h4 className="font-[Starduster] text-4xl md:text-8xl text-customYellow drop-shadow-lg mb-4">Lotterie</h4>
+                  <h4 className="font-[Starduster] text-4xl md:text-8xl text-customYellow drop-shadow-lg mb-4">лотерея</h4>
+                  <h4 className="font-[Starduster] text-4xl md:text-8xl text-customYellow drop-shadow-lg mb-4">վիճակախաղ</h4>
+                  <h4 className="font-[Starduster] text-4xl md:text-8xl text-customYellow drop-shadow-lg mb-4">लॉटरी</h4>
                   </div>
                 </div>
                 <h1 className="text-2xl font-[Starduster] text-customYellow mb-8">Ethereum Lottery dApp</h1>

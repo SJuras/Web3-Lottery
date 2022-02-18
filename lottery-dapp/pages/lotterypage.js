@@ -109,30 +109,33 @@ export default function Home() {
               <div className="flex w-full md:w-2/3 flex-col h-full p-2">
                 <section className="md:mt-5">
 
-                <div className="flex flex-col md:hidden w-full mb-5">
-                  <div className="w-full mb-2 p-2 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
-                    <h4 className="text-xl font-[Starduster] text-customPurple">Lottery History</h4>
-                    <h4 className="text-xl font-[Starduster] text-customPurple">沿革</h4>
-                    <p>Lottery #1 Winner:</p>
-                    <p>勝者</p>
-                    <div className="w-full">
-                      <a href="" target="_blank">7585869695947373636346586896769</a>
+                  <div className="flex flex-col md:hidden w-full mb-5">
+                    <div className="w-full mb-2 p-2 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
+                      <h4 className="text-xl font-[Starduster] text-customPurple">Lottery History</h4>
+                      <h4 className="text-xl font-[Starduster] text-customPurple">沿革</h4>
+                      <p>Lottery #1 Winner:</p>
+                      <p>勝者</p>
+                      <div className="w-full">
+                        <a href="" target="_blank">7585869695947373636346586896769</a>
+                      </div>
+                    </div>
+                    <div className="w-full mb-2 p-2 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
+                      <h4 className="text-xl font-[Starduster] text-customPurple">PlAyers</h4>
+                      <h4 className="text-xl font-[Starduster] text-customPurple">プレイヤー</h4>
+                      <div className="w-full">
+                        <a href="" target="_blank">7585869695947373636346586896769</a>
+                      </div>
+                    </div>
+                    <div className="w-full mb-2 p-2 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
+                      <h4 className="text-xl font-[Starduster] text-customPurple">Pot</h4>
+                      <h4 className="text-xl font-[Starduster] text-customPurple">総計</h4>
+                      <p>10 Ether</p>
                     </div>
                   </div>
-                  <div className="w-full mb-2 p-2 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
-                    <h4 className="text-xl font-[Starduster] text-customPurple">PlAyers</h4>
-                    <h4 className="text-xl font-[Starduster] text-customPurple">プレイヤー</h4>
-                    <div className="w-full">
-                      <a href="" target="_blank">7585869695947373636346586896769</a>
-                    </div>
-                  </div>
-                  <div className="w-full mb-2 p-2 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
-                    <h4 className="text-xl font-[Starduster] text-customPurple">Pot</h4>
-                    <h4 className="text-xl font-[Starduster] text-customPurple">総計</h4>
-                    <p>10 Ether</p>
-                  </div>
-                </div>
 
+                  <h4 className="text-4xl md:text-6xl text-customYellow font-[Starduster] drop-shadow-lg">Win Prizes!</h4>
+                  <h4 className="hidden text-4xl md:text-6xl text-customYellow font-[Starduster] drop-shadow-lg">Get lucky!</h4>
+                  <h4 className="hidden text-4xl md:text-6xl text-customYellow font-[Starduster] drop-shadow-lg">Roll the Dice!</h4>
                   <p>Enter Lottery by sending 0.01 Ether</p>
                   <p>0.01Etherを送信して宝くじに参加する</p>
                   <button className="mt-3 p-2 bg-customPurple text-customYellow font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
@@ -142,11 +145,25 @@ export default function Home() {
                   <h4 className="text-lg">頑張って</h4>
                 </section>
                 <section className="mt-6">
-                  <p>Admin Only - Start the Lottery</p>
-                  <p>管理者のみ - 宝くじを開始します</p>
-                  <button className="mt-3 p-2 bg-customBlue text-customYellow font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightBlue">
-                    StArt Lottery
-                  </button>
+                  <div className="w-full flex flex-col-reverse md:flex-row items-end">
+                    <div className="w-full md:w-1/2">
+                      <p>Admin Only - Start the Lottery</p>
+                      <p>管理者のみ - 宝くじを開始します</p>
+                      <button className="mt-3 mb-3 p-2 bg-customBlue text-customYellow font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightBlue">
+                        StArt Lottery
+                      </button>
+                    </div>
+                    <div className="w-full md:w-1/2 flex justify-end">
+                      <div className="w-2/3 relative">
+                        <img src="/images/assistent6.png" className="h-full w-full" alt="Sindi" />
+                        <div className="absolute top-0 -left-40 z-50 text-left">
+                          <h4 className="text-2xl font-[Starduster] text-customYellow drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">I wish you luck</h4>
+                          <h4 className="text-2xl font-[Starduster] text-customYellow drop-shadow-lg font-bold animate-[beep2_10s_ease-in-out_infinite]">がんばって</h4>
+                          <h4 className="text-2xl font-[Starduster] text-customYellow drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">sok sikert<br /> kívAnok</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </section>
 
                 <div className="flex flex-row md:hidden w-full my-2 p-2 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
