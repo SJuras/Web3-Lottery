@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import axios from 'axios';
 import Marquee from 'react-fast-marquee';
 
 import AwesomeSlider from 'react-awesome-slider';
@@ -13,6 +14,10 @@ import Footer from '../components/Footer.js';
 
 import 'bulma/css/bulma.css';
 
+import { FaArrowUp } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
+
+
 export default function Home() {
 
   const AutoplaySlider = withAutoplay(AwesomeSlider);
@@ -20,6 +25,22 @@ export default function Home() {
   const [warnLang, setWarnLand] = useState(1);
   const [descLang, setDescLang] = useState(1);
   const [aboutLang, setAboutLang] = useState(1);
+
+  const [data, setData] = useState(null);
+
+  const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=15&page=1&sparkline=false';
+
+  useEffect(() => {
+    axios.get(url).then((response) => {
+      setData(response.data)
+    }).catch((error) => {
+      console.log(error)
+    })
+  }, [])
+
+  console.log(data);
+
+  if(!data) return null;
 
   return (
     <div className="w-full">
@@ -86,42 +107,217 @@ export default function Home() {
             </div>
             <div className="w-full h-12 bg-customYellow absolute z-100 bottom-20 overflow-hidden flex items-center">
               <Marquee pauseOnHover speed={80} gradient={false}>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
-                  ETH: 1.5  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
-                  BTC: 1.2  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
-                  ALGO: 1.1  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
-                  ETH: 1.5  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
-                  BTC: 1.2  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
-                  ALGO: 1.1  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
-                  ETH: 1.5  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
-                  BTC: 1.2  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
-                  ALGO: 1.1  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
-                  ETH: 1.5  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
-                  BTC: 1.2  ///
-                </h4>
-                <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mx-4">
-                  ALGO: 1.1  ///
-                </h4>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[0].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[0].current_price.toLocaleString()}
+                  </h4>
+                  {data[0].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[0].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[0].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[1].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[1].current_price.toLocaleString()}
+                  </h4>
+                  {data[1].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[1].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[1].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[2].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[2].current_price.toLocaleString()}
+                  </h4>
+                  {data[2].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[2].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[2].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[3].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[3].current_price.toLocaleString()}
+                  </h4>
+                  {data[3].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[3].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[3].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[4].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[4].current_price.toLocaleString()}
+                  </h4>
+                  {data[4].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[4].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[4].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[5].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[5].current_price.toLocaleString()}
+                  </h4>
+                  {data[5].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[5].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[5].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[6].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[6].current_price.toLocaleString()}
+                  </h4>
+                  {data[6].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[6].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[6].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[7].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[7].current_price.toLocaleString()}
+                  </h4>
+                  {data[7].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[7].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[7].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[8].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[8].current_price.toLocaleString()}
+                  </h4>
+                  {data[8].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[8].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[8].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[9].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[9].current_price.toLocaleString()}
+                  </h4>
+                  {data[9].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[9].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[9].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[10].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[10].current_price.toLocaleString()}
+                  </h4>
+                  {data[10].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[10].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[10].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[11].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[11].current_price.toLocaleString()}
+                  </h4>
+                  {data[11].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[11].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[11].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[12].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[12].current_price.toLocaleString()}
+                  </h4>
+                  {data[12].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[12].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[12].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    {data[13].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[13].current_price.toLocaleString()}
+                  </h4>
+                  {data[13].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[13].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[13].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
+                <div className="flex items-center mx-8">
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
+                    {data[14].symbol} :
+                  </h4>
+                  <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
+                    ${data[14].current_price.toLocaleString()}
+                  </h4>
+                  {data[14].price_change_percentage_24h < 0 ? (
+                    <h4 className="text-2xl font-bold text-customRed font-[Starduster]"><FaArrowDown className="inline -mt-2" />{data[14].price_change_percentage_24h.toFixed(2)}</h4>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-customBlue font-[Starduster]"><FaArrowUp className="inline -mt-2" />{data[14].price_change_percentage_24h.toFixed(2)}</h4>
+                  )}
+                </div>
+
               </Marquee>
             </div>
           </div>
@@ -271,7 +467,7 @@ export default function Home() {
                   <div className="h-16 overflow-hidden mb-4">
                     <div className="animate-[warningMove_10s_ease-in_infinite_alternate]">
                       <h5 className="text-2xl text-customRed font-[Starduster]">for testing purposes only</h5>
-                      <h5 className="text-2xl text-customRed font-[Starduster] font-bold">テスト目的のみ<br /></h5>
+                      <h5 className="text-2xl text-customRed font-[Starduster] font-bold">テスト目的のみ</h5>
                       <h5 className="text-2xl text-customRed font-[Starduster]">nur zu Testzwecken</h5>
                       <h5 className="text-2xl text-customRed font-[Starduster]">csAk tesztelés céljából</h5>
                       <h5 className="text-2xl text-customRed font-[Starduster] font-bold">테스트 목적으로만</h5>
@@ -289,7 +485,7 @@ export default function Home() {
         </div>
 
         {/* instructions */}
-        <div className="w-full">
+        <div className="w-full mb-8">
           <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
             <div className="w-full md:w-1/2 p-4 rounded-xl border-0 border-customLightBlue drop-shadow-xl bg-white">
 
@@ -512,8 +708,28 @@ export default function Home() {
 
         {/* description */}
         <div className="w-full">
-          <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row pb-4 p-4 rounded-xl border-4 border-customLightBlue drop-shadow-xl bg-white">
+          <div className="w-full max-w-7xl mx-auto flex flex-col-reverse md:flex-row pb-4">
             <div className="w-full md:w-1/2">
+              <div className="w-full flex justify-center md:justify-end items-center relative">
+                <div className="hidden md:flex w-2/3">
+                  <img src="/images/assistent4.png" className="h-full w-full" />
+                </div>
+                <div className="flex w-2/3 md:hidden">
+                  <img src="/images/assistent5.png" className="h-full w-full" />
+                </div>
+                <div className="hidden md:block absolute top-10 left-10 text-left">
+                  <h4 className="font-[Starduster] text-customYellow text-4xl drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">Welcome</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">ようこそ</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">स्वागत</h4>
+                </div>
+                <div className="hidden md:block absolute bottom-0 left-10 text-left">
+                  <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">어서 오십시오</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-4xl drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">Üdvözöljük</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-4xl drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">Hos geldin</h4>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 p-4 rounded-xl border-0 border-customLightBlue drop-shadow-xl bg-white">
 
             <div className="w-full flex flex-col mb-4">
               <h4 className="text-2xl font-[Starduster] text-customRed">lAnguAge Selection</h4>
