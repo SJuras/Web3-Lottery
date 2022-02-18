@@ -761,6 +761,10 @@ export default function Home() {
                   Since the author of this dApp is not a proficient linguist, he did the best he could using Google translate and similar
                   translation services while writting the text. Therefor, apologies for any grammar mistakes which are surely present.
                 </p>
+                <p>
+                  Character "Sindi" was created by insanely talented artist:
+                </p>
+                <a href="https://verymanytubes.com/" className="font-bold text-customPurple transition duration-300 hover:text-customBlue">verymanytubes.com</a>
                 <div className="bg-transparent">
                   <AutoplaySlider
                       play={true}
@@ -797,6 +801,10 @@ export default function Home() {
                   このdAppの作成者は熟練した言語学者ではないため、テキストを書きながら、Google翻訳や同様の翻訳サービスを使用してできる限りのことをしました。<br />
                   そのため、確かに存在する文法の間違いについてお詫び申し上げます。
                 </p>
+                <p>
+                  キャラクター「シンディ」は素晴らしい才能のあるアーティストによって作られました：
+                </p>
+                <a href="https://verymanytubes.com/" className="font-bold text-customPurple transition duration-300 hover:text-customBlue">verymanytubes.com</a>
                 <div className="bg-transparent">
                   <AutoplaySlider
                       play={true}
@@ -833,6 +841,10 @@ export default function Home() {
                   इस डीएपी के लेखक एक कुशल भाषाविद् नहीं हैं, पाठ लिखते समय उन्होंने Google अनुवाद और इसी तरह की अनुवाद सेवाओं का उपयोग करने के लिए हर संभव प्रयास किया.
                   इसलिए, किसी भी व्याकरण की गलतियों के लिए क्षमा चाहते हैं जो निश्चित रूप से मौजूद हैं।
                 </p>
+                <p>
+                  चरित्र "सिंडी" अद्भुत प्रतिभाशाली कलाकार द्वारा बनाया गया था:
+                </p>
+                <a href="https://verymanytubes.com/" className="font-bold text-customPurple transition duration-300 hover:text-customBlue">verymanytubes.com</a>
                 <div className="bg-transparent">
                   <AutoplaySlider
                       play={true}
@@ -869,6 +881,10 @@ export default function Home() {
                   Mivel ennek a dApp-nak a szerzője nem jártas nyelvész, minden tőle telhetőt megtett a Google fordító és a hasonló fordítói szolgáltatások segítségével a szövegírás közben.
                   Ezért elnézést a nyelvtani hibákért, amelyek biztosan előfordulnak.
                 </p>
+                <p>
+                  A "Sindi" karaktert egy csodálatos tehetséges művész készítette:
+                </p>
+                <a href="https://verymanytubes.com/" className="font-bold text-customPurple transition duration-300 hover:text-customBlue">verymanytubes.com</a>
                 <div className="bg-transparent">
                   <AutoplaySlider
                       play={true}
@@ -904,6 +920,10 @@ export default function Home() {
                 <p className="mb-2">
                   Bu dApp'nin yazarı yetkin bir dilbilimci değil, metni yazarken Google çeviri ve benzeri çeviri hizmetlerini kullanarak elinden gelenin en iyisini yaptı. Bu nedenle, kesinlikle mevcut olan herhangi bir dilbilgisi hatası için özür dilerim.
                 </p>
+                <p>
+                  "Sindi" karakteri, inanılmaz yetenekli bir sanatçı tarafından yapıldı:
+                </p>
+                <a href="https://verymanytubes.com/" className="font-bold text-customPurple transition duration-300 hover:text-customBlue">verymanytubes.com</a>
                 <div className="bg-transparent">
                   <AutoplaySlider
                       play={true}
