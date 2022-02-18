@@ -110,7 +110,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[0].symbol} :
+                    {data[0].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[0].current_price.toLocaleString()}
@@ -124,7 +124,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[1].symbol} :
+                    {data[1].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[1].current_price.toLocaleString()}
@@ -138,7 +138,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[2].symbol} :
+                    {data[2].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[2].current_price.toLocaleString()}
@@ -152,7 +152,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[3].symbol} :
+                    {data[3].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[3].current_price.toLocaleString()}
@@ -166,7 +166,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[4].symbol} :
+                    {data[4].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[4].current_price.toLocaleString()}
@@ -180,7 +180,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[5].symbol} :
+                    {data[5].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[5].current_price.toLocaleString()}
@@ -194,7 +194,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[6].symbol} :
+                    {data[6].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[6].current_price.toLocaleString()}
@@ -208,7 +208,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[7].symbol} :
+                    {data[7].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[7].current_price.toLocaleString()}
@@ -222,7 +222,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[8].symbol} :
+                    {data[8].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[8].current_price.toLocaleString()}
@@ -236,7 +236,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[9].symbol} :
+                    {data[9].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[9].current_price.toLocaleString()}
@@ -250,7 +250,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[10].symbol} :
+                    {data[10].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[10].current_price.toLocaleString()}
@@ -264,7 +264,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[11].symbol} :
+                    {data[11].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[11].current_price.toLocaleString()}
@@ -278,7 +278,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[12].symbol} :
+                    {data[12].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[12].current_price.toLocaleString()}
@@ -292,7 +292,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
-                    {data[13].symbol} :
+                    {data[13].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[13].current_price.toLocaleString()}
@@ -306,7 +306,7 @@ export default function Home() {
 
                 <div className="flex items-center mx-8">
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] ml-4 mr-2">
-                    {data[14].symbol} :
+                    {data[14].symbol.toUpperCase()} :
                   </h4>
                   <h4 className="text-2xl font-bold text-zinc-800 font-[Starduster] mr-2">
                     ${data[14].current_price.toLocaleString()}
