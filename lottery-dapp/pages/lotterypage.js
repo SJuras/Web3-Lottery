@@ -157,9 +157,9 @@ export default function Home() {
                       <div className="w-2/3 relative">
                         <img src="/images/assistent6.png" className="h-full w-full" alt="Sindi" />
                         <div className="absolute top-0 -left-20 md:-left-40 z-50 text-left">
-                          <h4 className="text-lg md:text-2xl font-[Starduster] text-customYellow drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">I wish you luck</h4>
-                          <h4 className="text-lg md:text-2xl font-[Starduster] text-customYellow drop-shadow-lg font-bold animate-[beep2_10s_ease-in-out_infinite]">がんばって</h4>
-                          <h4 className="text-lg md:text-2xl font-[Starduster] text-customYellow drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">sok sikert<br /> kívAnok</h4>
+                          <h4 className="text-lg md:text-2xl font-[Starduster] text-customYellow drop-shadow-lg animate-none md:animate-[beep1_10s_ease-in-out_infinite]">I wish you luck</h4>
+                          <h4 className="text-lg md:text-2xl font-[Starduster] text-customYellow drop-shadow-lg font-bold animate-none md:animate-[beep2_10s_ease-in-out_infinite]">がんばって</h4>
+                          <h4 className="text-lg md:text-2xl font-[Starduster] text-customYellow drop-shadow-lg animate-none md:animate-[beep3_10s_ease-in-out_infinite]">sok sikert<br /> kívAnok</h4>
                         </div>
                       </div>
                     </div>

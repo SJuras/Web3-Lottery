@@ -53,7 +53,7 @@ export default function Home() {
       <main className="relative min-h-full w-full">
       {/* navbar */}
         <nav className="w-full mb-4 absolute z-50 top-0">
-          <div className="flex justify-between items-center w-full max-w-7xl mx-auto p-3 mt-4">
+          <div className="flex justify-between items-center w-full max-w-7xl mx-auto p-3 mt-0 mt-4">
             <div className="">
                 <h1 className="font-[Starduster] text-4xl text-customYellow drop-shadow-lg drop-shadow-lg">SOKUDO</h1>
             </div>
@@ -66,11 +66,11 @@ export default function Home() {
         </nav>
 
         {/* main content */}
-        <div className="w-full absolute z-50 min-h-full">
+        <div className="mt-12 md:mt-0 w-full absolute z-50 min-h-full">
           <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row h-screen justify-center items-center p-3">
             <div className="w-full md:w-1/2 flex flex-col justify-start items-center">
               <section className="w-full">
-                <h2 className="font-[Starduster] text-4xl md:text-8xl text-customYellow drop-shadow-lg">SOKUDO</h2>
+                <h2 className="hidden md:block font-[Starduster] text-4xl md:text-8xl text-customYellow drop-shadow-lg">SOKUDO</h2>
                 <h4 className="font-[Starduster] text-4xl md:text-8xl text-customYellow drop-shadow-lg mb-4">Lottery</h4>
                 <div className="hidden md:flex md:h-24 overflow-hidden mb-4">
                   <div className="animate-[titleMove_10s_ease-in_infinite]">
@@ -83,14 +83,14 @@ export default function Home() {
                 </div>
                 <h1 className="text-2xl font-[Starduster] text-customYellow mb-8">Ethereum Lottery dApp</h1>
               </section>
-              <section className="flex w-1/2 md:w-full flex-col md:flex-row">
+              <section className="flex w-2/3 md:w-full flex-col md:flex-row">
                 <div className="md:mr-4 p-2 bg-customPurple font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightPurple">
                   <Link href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
                     <p className="text-customYellow text-2xl text-center">To Lottery</p>
                   </Link>
                 </div>
-                <div className="text-center p-2 bg-customBlue font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightBlue">
-                  <button href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow">
+                <div className="text-center bg-customBlue font-[Starduster] text-2xl cursor-pointer drop-shadow-lg transition duration-300 hover:bg-customLightBlue">
+                  <button href="/lotterypage" className="font-[Starduster] cursor-pointer text-customYellow p-2">
                     LeArn More
                   </button>
                 </div>
@@ -100,7 +100,7 @@ export default function Home() {
               <div className="w-3/4 flex justify-center items-center animate-[modelBeep_15s_ease-in-out_infinite]">
                 <img src="/images/pinup1.png" className="h-full w-full" />
               </div>
-              <div className="flex flex-col absolute top-20 right-0 z-100">
+              <div className="hidden md:flex flex-col absolute top-20 right-0 z-100">
                 <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">Good Luck!</h4>
                 <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">幸運を祈る</h4>
               </div>
