@@ -101,8 +101,8 @@ export default function Home() {
                 <img src="/images/pinup1.png" className="h-full w-full" />
               </div>
               <div className="hidden md:flex flex-col absolute top-20 right-0 z-100">
-                <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">Good Luck!</h4>
-                <h4 className="text-4xl text-customYellow font-[Starduster] drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">幸運を祈る</h4>
+                <h4 className="text-xl md:text-2xl lg:text-4xl text-customYellow font-[Starduster] drop-shadow-lg animate-none xl:animate-[beep1_10s_ease-in-out_infinite]">Good Luck!</h4>
+                <h4 className="text-xl md:text-2xl lg:text-4xl text-customYellow font-[Starduster] drop-shadow-lg animate-none xl:animate-[beep2_10s_ease-in-out_infinite]">幸運を祈る</h4>
               </div>
             </div>
             <div className="w-full h-12 bg-customYellow absolute z-100 bottom-20 overflow-hidden flex items-center">
@@ -334,7 +334,7 @@ export default function Home() {
       </main>
 
       {/* about */}
-      <div className="w-full bg-customBlue py-8">
+      <div className="w-full bg-customBlue py-8 overflow-x-hidden">
         <div className="w-full">
           <div className="w-full max-w-7xl mx-auto flex justify-center items-center flex-col md:flex-row mb-4 bg-zinc-800 rounded-xl border-4 border-customLightBlue drop-shadow-xl">
             <div className="w-full md:w-1/2 p-4">
@@ -485,7 +485,7 @@ export default function Home() {
         </div>
 
         {/* instructions */}
-        <div className="w-full mb-8">
+        <div className="w-full mb-8 overflow-x-hidden">
           <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row mb-4">
             <div className="w-full md:w-1/2 p-4 rounded-xl border-0 border-customLightBlue drop-shadow-xl bg-white">
 
@@ -692,14 +692,14 @@ export default function Home() {
                   <img src="/images/assistent3.png" className="h-full w-full" />
                 </div>
                 <div className="hidden md:block absolute top-10 right-10 text-right">
-                  <h4 className="font-[Starduster] text-customYellow text-4xl drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">Welcome</h4>
-                  <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">ようこそ</h4>
-                  <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">स्वागत</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-xl  lg:text-4xl drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">Welcome</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-xl  lg:text-4xl font-bold drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">ようこそ</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-xl  lg:text-4xl font-bold drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">स्वागत</h4>
                 </div>
                 <div className="hidden md:block absolute bottom-0 right-10 text-right">
-                  <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">어서 오십시오</h4>
-                  <h4 className="font-[Starduster] text-customYellow text-4xl drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">Üdvözöljük</h4>
-                  <h4 className="font-[Starduster] text-customYellow text-4xl drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">Hos geldin</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-xl  lg:text-4xl font-bold drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">어서 오십시오</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-xl  lg:text-4xl drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">Üdvözöljük</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-xl  lg:text-4xl drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">Hos geldin</h4>
                 </div>
               </div>
             </div>
@@ -718,14 +718,14 @@ export default function Home() {
                   <img src="/images/assistent5.png" className="h-full w-full" />
                 </div>
                 <div className="hidden md:block absolute top-10 left-10 text-left">
-                  <h4 className="font-[Starduster] text-customYellow text-4xl drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">Welcome</h4>
-                  <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">ようこそ</h4>
-                  <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">स्वागत</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-xl  lg:text-4xl drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">Welcome</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-xl  lg:text-4xl font-bold drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">ようこそ</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-xl  lg:text-4xl font-bold drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">स्वागत</h4>
                 </div>
                 <div className="hidden md:block absolute bottom-0 left-10 text-left">
-                  <h4 className="font-[Starduster] text-customYellow text-4xl font-bold drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">어서 오십시오</h4>
-                  <h4 className="font-[Starduster] text-customYellow text-4xl drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">Üdvözöljük</h4>
-                  <h4 className="font-[Starduster] text-customYellow text-4xl drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">Hos geldin</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-xl  lg:text-4xl font-bold drop-shadow-lg animate-[beep1_10s_ease-in-out_infinite]">어서 오십시오</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-xl  lg:text-4xl drop-shadow-lg animate-[beep2_10s_ease-in-out_infinite]">Üdvözöljük</h4>
+                  <h4 className="font-[Starduster] text-customYellow text-xl  lg:text-4xl drop-shadow-lg animate-[beep3_10s_ease-in-out_infinite]">Hos geldin</h4>
                 </div>
               </div>
             </div>
