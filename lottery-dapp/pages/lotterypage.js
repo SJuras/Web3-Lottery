@@ -145,7 +145,7 @@ export default function Home() {
                   <h4 className="text-lg">頑張って</h4>
                 </section>
                 <section className="mt-6">
-                  <div className="w-full flex flex-col-reverse md:flex-row items-end">
+                  <div className="w-full flex flex-col-reverse lg:flex-row items-end">
                     <div className="w-full md:w-1/2">
                       <p>Admin Only - Start the Lottery</p>
                       <p>管理者のみ - 宝くじを開始します</p>
@@ -417,7 +417,7 @@ export default function Home() {
                         <div className="history-entry">
                           <div>Lottery #1 Winner: </div>
                           <div>勝者</div>
-                          <div>
+                          <div className="w-full overflow-x-hidden">
                             <a href="" target="_blank">7585869695947373636346586896769</a>
                           </div>
                         </div>
@@ -431,7 +431,7 @@ export default function Home() {
                       <div className="content">
                         <h2 className="text-xl text-customYellow font-[Starduster]">PlAyers (1)</h2>
                         <h2 className="text-xl text-customYellow font-[Starduster]">プレイヤー</h2>
-                        <div>
+                        <div className="w-full overflow-x-hidden">
                           <a href="" target="_blank">7585869695947373636346586896769</a>
                         </div>
                       </div>
